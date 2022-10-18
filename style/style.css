@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body * {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: .5rem;
+  top: 0;
+  position: fixed;
+  font-size: .9rem;
+
+}
+
+a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
+
+header>nav>img {
+  width: 10rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.menu-icons{
+  width: 1.5rem;
+  color: white;
+}
+.icon-small{
+  width: .75rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+}
+
+
+
+
+
+
+
+main>section{
+  width: 100%;
+  height: 60rem;
+ 
+
+}
+#first{
+  background-image: url("/DIY/img/Arte01.jpg");
+  background-size: cover;
+}
+#second{
+  background-image: url("/DIY/img/tempest.jpg");
+  background-size: cover;
+}
+#third{
+  background-image: url("/DIY/img/atlas.jpg");
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #c2175b;
+  padding: 3rem;
+  color: white;
+  width: 100%;
+}
+
+.column.disclaimer {
+  display: flex;
+  flex-grow: 3;
+  align-items: flex-start;
+}
+
+.column.disclaimer p {
+  max-width: 250px;
+  word-break: break-word;
+}
+
+.column.categories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 2;
+}
+
+.column.categories nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.column.institucional {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 2;
+}
+
+.column.institucional nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+footer .column img {
+  max-width: 12rem;
+}
+
+.column.categories nav>h1 {
+  font-size: large;
+  line-height: 35px;
+}
