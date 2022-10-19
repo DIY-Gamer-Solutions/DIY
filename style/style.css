@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +11,17 @@ body * {
   flex-flow: column;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
+ 
+}
+body{
+  width: 100%;
 }
 
 header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin: .5rem;
+ 
   top: 0;
   position: fixed;
   font-size: .9rem;
@@ -72,15 +77,18 @@ header>nav>img {
 }
 
 
-
-
+/* da qui pra baixo não tem mais nada relacionado ao header */
+main{
+  display: flex;
+  width: 100%;
+}
 
 
 
 main>section{
   width: 100%;
   height: 60rem;
- 
+ background-position: center;
 
 }
 #first{
