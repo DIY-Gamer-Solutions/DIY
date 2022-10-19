@@ -47,7 +47,7 @@ header nav {
   width: 33.33%;
 }
 
-header>nav>img {
+header>nav>a>img {
   width: 10rem;
 }
 

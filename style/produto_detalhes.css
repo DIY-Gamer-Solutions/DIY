@@ -50,7 +50,7 @@ header nav {
     width: 33.33%;
 }
 
-header>nav>img {
+header>nav>a>img {
     width: 10rem;
 }
 
@@ -150,6 +150,7 @@ main>section>div {
 ///////////// 
 
 inicio do footer */
+
 #shopping-bar {
     width: 100%;
     display: flex;
