@@ -296,27 +296,27 @@ inicio do footer */
 
     #gpu {
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
     }
 
     #constrution {
         display: flex;
-        flex-flow: column-reverse;
+        flex-flow: column;
     }
 
     #ssd {
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
     }
 
     #performace {
         display: flex;
-        flex-flow: column-reverse;
+        flex-flow: column;
     }
 
     #cooler {
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
     }
 
     #description {
@@ -326,7 +326,7 @@ inicio do footer */
 
     #sumary {
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
     }
 
     #gpu-image {
