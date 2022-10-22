@@ -89,20 +89,20 @@ header>nav>a>img {
 inicio main */
 #case {
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     background-image: url("/DIY/img/atlas.jpg");
     background-size: cover;
     background-position: center;
 }
 
-main>section {
+.pc-information {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
 
-main>section>div {
+.pc-information>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -113,10 +113,26 @@ main>section>div {
 }
 
 .title-1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 800;
 
 }
+.subtitle-1{
+    font-size: 14px;
+    
+    color: #868e96;
+}
+
+.title-2 {
+    font-size: 28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.subtitle-2{
+    font-size: 22px;
+    
+    color: #F59B1A
+}
+
 
 .background-img {
     background-color: rgb(134, 134, 134);
@@ -128,50 +144,58 @@ main>section>div {
     background-position: center;
 }
 
-#gpu-details {
+#details {
     display: flex;
     flex-direction: column;
     padding: 4rem;
 }
 
-#gpu-details>div {
+#details>div {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     gap: 2rem;
-}#gpu-details>div>div {
+}#details>div>div {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
   
+} 
+#details p{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+#details p>span{
+    font-weight: bolder;
 }
 
 .information {
     display: flex;
     flex-direction: column;
     padding: 4rem;
+    background-color: #F8F9FA;
 }
-#gpu-details>div>form {
+.shopping-butons {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
 }
 
-#gpu-details>div>form>div {
+.shopping-butons>div {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-
-#gpu-details>div>form>div>button {
+.shopping-butons>div >button {
     height: 2rem;
     padding: 1rem;
     border: 0px;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: #F8F9FA;
     border: #343a40 solid .1rem;
     width: 6rem;
     justify-content: center;
@@ -179,18 +203,103 @@ main>section>div {
     
 }
 
-#gpu-details>div>form>div>button:hover {
+.shopping-butons>div>button:hover {
     background-color: #343a40;
     color: white;
 
     transition: .5s;
 }
 
-#gpu-details>div>form>div>button:focus {
+.shopping-butons>div>button:focus {
     background-color: #343a40;
     color: white;
+    border-radius: 0px;
 }
 
+#ssd-image {
+    background-image: url("/DIY/img/ssd.png");
+    background-size: cover;
+    background-position: center;
+}
+#cooler-image{
+    background-image: url("/DIY/img/watercooler.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.information-text > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+ 
+}
+.information-text  p{
+    margin-top: 5rem;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    color: #868e96;
+}
+#description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 650px;
+    background-color: white;
+    
+}
+#summary{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 650px;
+    align-items: center;
+    justify-content: center;
+    border: #343a40 1px solid;
+}
+.tabela{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.corpo-tabela{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    
+}
+.divisao-tabela{
+    border-bottom: 1px solid gray;
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+#construction-image {
+    background-image: url("/DIY/img/cronstrucao_n.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#performace-image {
+    background-image: url("/DIY/img/performace.avif");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
@@ -211,12 +320,12 @@ inicio do footer */
     flex-direction: row;
     position: fixed;
     bottom: 0;
-    background-color: #343a40 !important;
+    background-color: #3b3d3f !important;
     font-size: .9rem;
     min-height: 4rem;
     padding: 1rem;
     font-size: 1rem;
-    color: #868e96 !important;
+    color: #F59B1A !important;
 }
 
 #shopping-bar-text {
