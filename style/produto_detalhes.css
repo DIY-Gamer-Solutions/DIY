@@ -90,7 +90,7 @@ inicio main */
 #case {
     width: 100%;
     height: 1000px;
-    background-image: url("/DIY/img/atlas.jpg");
+    background-image: url("/img/Art4.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -128,11 +128,36 @@ main>section>div {
     background-position: center;
 }
 
+#pc-photo {
+    background-image: url("/img/rtx.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ssd-photo {
+    background-image: url("/img/ssd.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#photo-performace {
+    background-image: url("/img/workstation-refrigeracao-5.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#photo-pc {
+    background-image: url("/img/nvide-gpu.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #gpu-details {
     display: flex;
     flex-direction: column;
     padding: 4rem;
 }
+
 
 #gpu-details>div {
     display: flex;
@@ -140,6 +165,7 @@ main>section>div {
     width: 100%;
     align-items: flex-start;
     gap: 2rem;
+
 }#gpu-details>div>div {
     display: flex;
     flex-direction: column;
@@ -248,4 +274,112 @@ inicio do footer */
 #shopping-bar>#shopping-bar-button>button>img {
     width: 1rem;
     margin-right: 1rem;
+}
+
+/*Responividade do site*/
+
+@media (max-width:1006px){
+    #gpu-details {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 4rem;
+    }
+
+    #gpu-details>div>form>div {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+
+@media (max-width:908px){
+
+    #gpu {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #constrution {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    #ssd {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #performace {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    #cooler {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #description {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #sumary {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #gpu-image {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #pc-photo {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #ssd-photo {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #photo-performace {
+        width: 100%;
+        background-size: cover;
+        background-position: center;;
+    }
+    
+    #photo-pc {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width:690px){
+    #shopping-bar {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #shopping-bar-text {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    #shopping-bar>#shopping-bar-button {
+        display: flex;
+        flex-flow: row wrap;
+        width: 30%;
+        font-size: 1rem;
+        gap: 1rem;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
