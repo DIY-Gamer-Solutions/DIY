@@ -178,43 +178,7 @@ inicio main */
     padding: 4rem;
     background-color: #F8F9FA;
 }
-.shopping-butons {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
 
-.shopping-butons>div {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-.shopping-butons>div >button {
-    height: 2rem;
-    padding: 1rem;
-    border: 0px;
-    display: flex;
-    flex-direction: row;
-    background-color: #F8F9FA;
-    border: #343a40 solid .1rem;
-    width: 6rem;
-    justify-content: center;
-   align-items: center;
-    
-}
-
-.shopping-butons>div>button:hover {
-    background-color: #343a40;
-    color: white;
-
-    transition: .5s;
-}
-
-.shopping-butons>div>button:focus {
-    background-color: #343a40;
-    color: white;
-    border-radius: 0px;
-}
 
 #ssd-image {
     background-image: url("/DIY/img/ssd.png");
@@ -357,4 +321,41 @@ inicio do footer */
 #shopping-bar>#shopping-bar-button>button>img {
     width: 1rem;
     margin-right: 1rem;
+}
+.shopping-butons {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.shopping-butons>div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.shopping-butons>div >button {
+    height: 2rem;
+    padding: 1rem;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F8F9FA;
+    border: #343a40 solid .1rem;
+    width: 6rem;
+    justify-content: center;
+   align-items: center;
+   ;
+}
+
+.shopping-butons>div>button:hover {
+    background-color: #343a40;
+    color: white;
+
+    transition: .5s;
+}
+
+.shopping-butons>div>button:focus {
+    background-color: #343a40;
+    color: white;
+    border-radius: 0px;
 }
