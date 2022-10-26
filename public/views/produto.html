@@ -8,55 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
+    <title>DIY - Gamer Solutions</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img class="logo" src="/public/img/DIY.png" alt="">
+        <nav id="nav-logo">
+            <a href="/public/views/home.html"><img class="logo" src="/public/img/DIY.png" alt=""></a>
         </nav>
-        <nav>
+        <nav id="nav-menu">
             <ul id="menu">
-                <li><a href="#first"></a></li>
-                <li><a href="#second"></a></li>
-                <li><a href="#third"></a></li>
+                <li><a href="/public/views/produto.html">ENTRY EDITION</a></li>
+                <li><a href="/public/views/produto.html">GAMER EDITION</a></li>
+                <li><a href="/public/views/produto.html">WORK EDITION</a></li>
             </ul>
         </nav>
         <nav id="icons">
-            <a href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
-            <a  href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png" alt=""></a>
-            <a href=""><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
+            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
+            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png" alt=""></a>
+            <a id="menu-cart" href=""><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
+            <a id="menu-sandwich" href=""><img class="menu-icons" src="/public/img/menu-4-512.png" alt=""></a>
         </nav>
+
     </header>
 
     <main>
         <section class="pcs">
-            <div class="block1" id="img1">  
-            
-            <h1>ASTRA</h1>
-            <span>Uma nova era</span>
-            <button>comprar</button>    
+            <div class="block1" id="img1">
+                <h1>package.json</h1>
+                <span>um novo conceito</span>
+                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
+                
             </div>
 
             <div class="block1" id="img2">
-            
-            <h1>HAVY</h1>
-            <span>A solução para quem busca performance.</span>
-            <button>comprar</button> 
+
+                <h1>script.js</h1>
+                <span>quebre todas as barreiras</span>
+                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
             </div>
-    
+
             <div class="block1" id="img3">
-            
-            <h1>TEMPEST</h1>
-            <span>A força está no ar</span>
-            <button>comprar</button>
+
+                <h1>index.exe</h1>
+                <span>tudo que você precisa</span>
+                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
             </div>
-    
+
             <div class="block1" id="img4">
-            
-            <h1>ATLAS</h1>
-            <span>Supere todos desafios</span>
-            <button>comprar</button> 
+
+                <h1>ATLAS</h1>
+                <span>Supere todos desafios</span>
+                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
             </div>
         </section>
         <section class="faq">
@@ -68,31 +71,58 @@
                 <div>
                     <div>
                         <h4>Qual PC é ideal para minha empresa?</h4>
-                        <p>A linha de PC DIY é divididas em três produtos, indicados de acordo com o segmento de trabalho da sua empresa. A Heavy I foi concebida para fluxos de trabalho audiovisual, com foco em edição de imagem e vídeo do pacote Adobe. Para as empresas de engenharia e arquitetura a Heavy II é nossa recomendação por contar com um conjunto de processadores, placas de vídeo e memórias mais robustos. Agora se sua empresa trabalha com pesquisa científica, simulação de materias ou simplesmente quer otimizar o workflow o quanto for possível, a Heavy V foi feita para você.</p>
+                        <p>A linha de PC DIY é divididas em três produtos, indicados de acordo com o segmento de
+                            trabalho da sua empresa. A Heavy I foi concebida para fluxos de trabalho audiovisual, com
+                            foco em edição de imagem e vídeo do pacote Adobe. Para as empresas de engenharia e
+                            arquitetura a Heavy II é nossa recomendação por contar com um conjunto de processadores,
+                            placas de vídeo e memórias mais robustos. Agora se sua empresa trabalha com pesquisa
+                            científica, simulação de materias ou simplesmente quer otimizar o workflow o quanto for
+                            possível, a Heavy V foi feita para você.</p>
                     </div>
                     <div>
                         <h4>Qual o prazo de entrega e política de frete?</h4>
-                        <p>O frete é gratuito para todo Brasil. Utilizamos transportadora especializada em mercadorias sensíveis, com seguro e garantia do recebimento e da integridade da sua encomenda. O prazo de produção das workstations é de até 10 dias úteis após confirmação de pagamento, já o prazo de transporte depende da região de entrega, ficando em torno de até 3 dias úteis para capitais e 7 dias úteis para interiores.</p>
+                        <p>O frete é gratuito para todo Brasil. Utilizamos transportadora especializada em mercadorias
+                            sensíveis, com seguro e garantia do recebimento e da integridade da sua encomenda. O prazo
+                            de produção das workstations é de até 10 dias úteis após confirmação de pagamento, já o
+                            prazo de transporte depende da região de entrega, ficando em torno de até 3 dias úteis para
+                            capitais e 7 dias úteis para interiores.</p>
                     </div>
 
                 </div>
                 <div>
                     <div>
                         <h4>Qual o prazo de garantia dos PCs?</h4>
-                        <p>Todas máquinas DIY contam com garantia de 1 (um) ano em todos os componentes e suporte técnico vitalício durante toda vida útil do equipamento.</p>
+                        <p>Todas máquinas DIY contam com garantia de 1 (um) ano em todos os componentes e suporte
+                            técnico vitalício durante toda vida útil do equipamento.</p>
                     </div>
                     <div>
                         <h4>A DIY trabalha com Intel Xeon, AMD Opteron, NVIDIA Quadro e AMD Fire Pro?</h4>
-                        <p>Com base nos testes realizados em diversas aplicações profissionais e na nossa experiência com clientes corporativos dos mais variados segmentos a linha de PCs DIY foi desenvolvida utilizando os processadores AMD e Intel em combinação com as placas de vídeo NVIDIA GeForce. Esse conjunto proporciona a melhor relação custo/performance para a grande maioria das aplicações. Se sua empresa tem uma demanda que exige uma padronização de hardware específica, não hesite em entrar em contato conosco.</p>
+                        <p>Com base nos testes realizados em diversas aplicações profissionais e na nossa experiência
+                            com clientes corporativos dos mais variados segmentos a linha de PCs DIY foi desenvolvida
+                            utilizando os processadores AMD e Intel em combinação com as placas de vídeo NVIDIA GeForce.
+                            Esse conjunto proporciona a melhor relação custo/performance para a grande maioria das
+                            aplicações. Se sua empresa tem uma demanda que exige uma padronização de hardware
+                            específica, não hesite em entrar em contato conosco.</p>
                     </div>
 
                 </div>
             </div>
         </section>
-    
-        
-
     </main>
-    
+    <footer>
+        <div id="shopping-bar">
+            <div id="shopping-bar-text">
+                <p>Todos os direitos reservados a DIY© </p>
+            </div>
+            <div id="shopping-bar-button">
+                <div id="pagamento">
+                    <img src="/public/img/mastercard.svg" alt="">
+                    <img src="/public/img/visa.svg" alt="">
+                    <img src="/public/img/paypal.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
