@@ -1,0 +1,458 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body * {
+
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  top: 0;
+  font-size: .9rem;
+  background-color: #3b3d3f;
+}
+
+header a {
+  color: white;
+}
+
+a {
+
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
+
+header>nav>a>img {
+  width: 10rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.menu-icons {
+  width: 1.5rem;
+  color: white;
+}
+
+.icon-small {
+  width: .75rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+}
+
+#menu-sandwich {
+  display: none;
+
+}
+
+@media (max-width: 520px) {
+
+  #nav-menu {
+    display: none;
+  }
+
+  #menu-user {
+    display: none;
+  }
+
+  #menu-dropdown {
+    display: none;
+  }
+
+  #menu-cart {
+    display: none;
+  }
+
+  #menu-sandwich {
+    display: initial;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+}
+
+/* daqui pra baixo não tem mais nada relacionado ao header */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#cadastro {
+  background-color: #F8F9FA;
+  border-radius: 30px;
+  width: 40%;
+  height: 100vh;
+  background-position: center;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+#cadastro>div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+#cadastro-from {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.form-itens {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+
+}
+
+.form-itens label {
+  font-size: 20px;
+
+  text-align: justify;
+  color: #868e96;
+}
+
+.form-itens input {
+  width: 100%;
+  background-color: transparent;
+  border: #868e96 1px solid;
+  height: 2rem;
+}
+
+#cadastro-from button {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: #3b3d3f 1px solid;
+
+}
+
+#cadastro-from button:hover {
+  background-color: #3b3d3f;
+  color: white;
+
+}
+
+#cadastro-from button:hover #white-img {
+  display: block;
+
+}
+
+#cadastro-from button:hover #black-img {
+  display: none;
+
+}
+
+#cadastro-from #white-img {
+  display: none;
+}
+
+
+#cadastro-from button>img {
+  height: 60%;
+}
+
+
+
+
+
+#login-link {
+  color: #F59B1A;
+}
+
+#login-link:hover {
+  text-decoration: underline;
+}
+
+/*configuração das imagens feita. Resta colocar as imagens finais da home*/
+
+.sobre {
+  background-color: #F8F9FA;
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+}
+
+#sobre-links {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sobre>div {
+  padding: 4rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  width: 50%;
+
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#texto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+#texto>p {
+  color: #404142;
+  width: 80%;
+}
+
+
+.links a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+/*configuração das imagens feita.*/
+
+@media (max-width: 1366px) {
+  #cadastro {
+
+    width: 50%;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  #cadastro {
+
+    width: 60%;
+
+  }
+}
+
+
+
+
+@media (max-width: 825px) {
+
+  .description {
+    margin-right: 0rem;
+  }
+
+  .first_homeimage {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .second_homeimage {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .third_homeimage {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #cadastro {
+
+    width: 70%;
+
+  }
+}
+
+@media (max-width:796px) {
+  .sobre>div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #sobre-links {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  #texto {
+    width: 100%;
+  }
+
+  #texto p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  #cadastro {
+
+    width: 80%;
+
+  }
+}
+
+@media (max-width: 600px) {
+  #cadastro {
+
+    width: 90%;
+
+  }
+}
+
+@media (max-width: 600px) {
+  #cadastro {
+
+    width: 95%;
+
+  }
+
+}
+
+@media (max-width: 525px) {
+  .form-itens {
+    width: 90%;
+  }
+}
+
+@media (max-width: 470px) {
+  .form-itens {
+    width: 95%;
+  }
+
+  #cadastro>div {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  #cadastro-from button {
+    width: 15rem;
+  }
+}
+
+
+@media (max-width: 510px) {
+  .sobre {
+    height: 1000px;
+  }
+
+}
+
+
+@media (max-width: 431px) {
+
+  .description>p {
+    letter-spacing: .4em;
+    font-size: 10px;
+  }
+
+  .description>h1 {
+    letter-spacing: .4em;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .sobre {
+    height: 1200px;
+  }
+
+  .sobre>div {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 328px) {
+  .sobre>div {
+    padding: 2rem;
+  }
+}
