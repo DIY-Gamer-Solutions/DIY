@@ -116,15 +116,14 @@ header>nav>a>img {
 /* daqui pra baixo não tem mais nada relacionado ao header */
 
 
-.painel{
+.painel {
   width: 100%;
   height: 20rem;
  background-position: center;
- background-color: #c8cacc;
 }
 
 .pedidos {
-  margin-top: 8rem;
+  margin-top: 10rem;
   color: #212529;
   text-align:center;
 }
@@ -141,15 +140,42 @@ header>nav>a>img {
   font-size: 1.2rem;
 }
 
-
-.menu-lateral {
-  display: flex;
-  flex-direction: column;
-  align-items: right;
+.menu-horizontal {
+  margin-right: 30rem;
+  height: 15rem;
+  width: 100%;
 }
 
+.menu-horizontal>ul {
+  display: flex;
+  flex-direction: row;
+}
 
+.menu-horizontal>ul>li {
+  padding: 3rem;
+  bottom: 40rem;
+}
 
+.menu-vertical {
+  margin-left: 33rem;
+}
+
+.menu-vertical>ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-vertical>ul>li {
+  padding: 1rem;
+}
+
+.icones {
+  width: 1.5rem;
+  color: white;
+  margin-right: 11rem;
+  margin-bottom: -2rem;
+}
 
 
 
