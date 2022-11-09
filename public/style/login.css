@@ -137,7 +137,7 @@ section {
   background-color: #F8F9FA;
   border-radius: 30px;
   width: 40%;
-  height: 80vh;
+  height: 40vh;
   background-position: center;
   gap: 2rem;
   margin: 2rem;
@@ -411,6 +411,10 @@ section {
   #cadastro>div {
     flex-direction: column;
     gap: .5rem;
+  }
+  #cadastro {
+    height: 50vh;
+
   }
 }
 
