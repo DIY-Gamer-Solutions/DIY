@@ -154,12 +154,13 @@ header>nav>a>img {
 .menu-horizontal>ul>li {
   padding: 3rem;
   bottom: 40rem;
+  
 }
 
 .menu-vertical {
   left: 20rem;
   position: relative;
-  bottom:13rem;
+  bottom:12.2rem;
 }
 
 .menu-vertical>ul {
@@ -170,6 +171,8 @@ header>nav>a>img {
 
 .menu-vertical>ul>li {
   padding: 1rem;
+  background-color: #dedfe1;
+  border-bottom: solid #ffffff .2rem;
 }
 
 .icones {
@@ -180,7 +183,7 @@ header>nav>a>img {
 }
 
 .sobre {
-  background-color: #dedfe1;
+background-color: #dedfe1;
 display: flex;
 width: 100%;
 min-height: 50vh;
