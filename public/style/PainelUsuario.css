@@ -157,7 +157,9 @@ header>nav>a>img {
 }
 
 .menu-vertical {
-  margin-left: 33rem;
+  left: 20rem;
+  position: relative;
+  bottom:13rem;
 }
 
 .menu-vertical>ul {
@@ -176,17 +178,6 @@ header>nav>a>img {
   margin-right: 11rem;
   margin-bottom: -2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .sobre {
   background-color: #dedfe1;
