@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style/finalizacao_compra.css">
+    <link rel="stylesheet" href="/public/style/finalizacao_endereco.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -44,10 +44,10 @@
         <section class="painel">
             <div class="container">
                 <div class="pedidos">
-                    <h1 class="seus-pedidos">Finalização</h1>
+                    <h1 class="seus-pedidos">Endereço</h1>
                     <div class="frase">
                         <div>
-                            <p>Como deseja pagar?</p>
+                            <p>Onde lhe encontramos?</p>
                         </div>
                     </div>
                 </div>
@@ -58,16 +58,16 @@
             <div class="menu-horizontal">
 
                 <div id="menu-inicial">
-                    <a id="menu-endereco" class="menu-finalizacao" href="/public/views/finalizacao_endereco.html">
+                    <span id="menu-endereco" class="menu-finalizacao" href="/public/views/finalizacao_endereco.html">
                         <div>
                             <span>Endereço</span>
                         </div>
-                    </a>
-                    <span id="menu-pagamento" class="menu-finalizacao" href="/public/views/finalizacao_compra.html">
+                    </span>
+                    <a id="menu-pagamento" class="menu-finalizacao" href="/public/views/finalizacao_compra.html">
                         <div>
                             <span>Pagamento</span>
                         </div>
-                    </span>
+                    </a>
                 </div>
 
 
@@ -78,32 +78,38 @@
                     </div>
 
                     <div id="sessao-pagamento">
+                        <form action="">
+                            <div>
+                                <div>
+                                    <label for="cep">CEP</label>
+                                    <input type="number">
+                                    <label for="endereco">Endereço(Rua,AV,ETC)</label>
+                                    <input type="text">
+                                    <label for="complemento">complemento</label>
+                                    <input type="text">
+                                    <label for="bairo">Bairo</label>
+                                    <input type="text">
 
-                        <div id="pagamento-avista" class="menu-box">
-                            <span>à Vista</span>
-                            <div class="pagamento-descricao">
-                                <p>Total <span class="valor-total">R$52.500,00</span></p>
-                                <p>Nas compras por boleto você recebe 5% de desconto</p>
+                                </div>
+                                <div>
+                                    <label for="estado">Estado</label>
+                                    <input type="text">
+                                    <label for="numero">Número</label>
+                                    <input type="number">
+                                    <label for="referenci">Ponto de Referência</label>
+                                    <input type="text">
+                                    <label for="cidade">cidade</label>
+                                    <input type="text">
+
+                                </div>
+
                             </div>
-                            <div class="condicao-pagamento">
-                                <button><img src="/public/img/pagamento.png" alt=""> <span>Boleto</span> </button>
-                            </div>
 
-                        </div>
+                            <button>cadastrar</button>
+                        </form>
 
 
-                        <div id="pagamento-parcelado" class="menu-box">
-                            <span>Parcelamento</span>
-                            <div class="pagamento-descricao">
-                                <p>Total <span class="valor-total">R$52.500,00</span></p>
-                                <p>Parcelamento em 12x de <span class="valor-parcelado">R$4.375</span></p>
-                            </div>
 
-                            <div class="condicao-pagamento">
-                                <button><img src="/public/img/debit-card.png" alt=""> <span>Cartão</span> </button>
-                                <button><img src="/public/img/paypal.png" alt=""> <span>PayPal</span> </button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
