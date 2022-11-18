@@ -88,15 +88,15 @@ section{
 }
 
 .first_homeimage{
-  background-image: url("/DIY/img/Arte01.jpg");
+  background-image: url("/img/Arte01.jpg");
   background-size: cover;
 }
 .second_homeimage{
-  background-image: url("/DIY/img/tempest.jpg");
+  background-image: url("/img/tempest.jpg");
   background-size: cover;
 }
 .third_homeimage{
-  background-image: url("/DIY/img/atlas.jpg");
+  background-image: url("/img/atlas.jpg");
   background-size: cover;
 }
 
