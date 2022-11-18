@@ -8,10 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/style/login.css">
     <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/public/style/home.css">
-    <script src="/public/js/login_modal.js" defer></script>
-
     <title>DIY - Gamer Solutions</title>
 </head>
 
@@ -28,8 +26,9 @@
             </ul>
         </nav>
         <nav id="icons">
-            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""><img
-                    class="menu-icons icon-small" src="/public/img/arrow-down.png" alt=""></a>
+            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
+            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png"
+                    alt=""></a>
             <a id="menu-cart" href=""><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
             <a id="menu-sandwich" href=""><img class="menu-icons" src="/public/img/menu hamburguer.png" alt=""></a>
         </nav>
@@ -37,57 +36,38 @@
     </header>
 
     <main>
-        <section id="cadastro">
-            <div>
-                <div>
-                    <h2>Login</h2>
-                    <span class="close">&times;</span>
-                </div>
-                <form id="cadastro-from" action="">
-                    <div class="form-itens">
-                        <label for="">Email</label>
-                        <input type="email">
-                    </div>
-                    <div class="form-itens">
-                        <label for="">Senha</label>
-                        <input type="password">
-                    </div>
-
-                    <button id="submit-buton"><img id="black-img" src="/public/img/login_black.png" alt=""><img
-                            id="white-img" src="/public/img/login_white.png" alt=""> <span>Entrar</span> </button>
-                </form>
-                <span>Não tem conta? <a id="login-link"
-                    href="/public/views/cadastro_usuario.html">Cadastre-se</a></span>
-            </div>
-
-        </section>
 
 
 
 
 
 
-        <section class="first_homeimage">
-            <div class="description">
-                <p>um novo conceito</p>
-                <h1>package.json</h1>
-                <a href="/public/views/produto.html"><button>Confira aqui</button></a>
-            </div>
-        </section>
-        <section class="second_homeimage">
-            <div class="description">
-                <p>quebre todas as barreiras</p>
-                <h1>script.js</h1>
-                <a href="/public/views/produto.html"><button>Confira aqui</button></a>
-            </div>
-        </section>
-        <section class="third_homeimage">
-            <div class="description">
-                <p>tudo que você precisa</p>
-                <h1>index.exe</h1>
-                <a href="/public/views/produto.html"><button>Confira aqui</button></a>
-            </div>
-        </section>
+
+
+        
+
+    
+ <section id="cadastro">
+    <div>
+        <h2>Login</h2>
+        <span>Não tem conta? <a id="login-link" href="/public/views/cadastro_usuario.html">Cadastre-se</a></span>
+    </div>
+
+
+<form id="cadastro-from" action="">
+    <div class="form-itens">
+        <label for="">Email</label>
+        <input type="email">
+    </div>
+    <div class="form-itens">
+        <label for="">Senha</label>
+        <input type="password">
+    </div>
+
+    <button id="submit-buton"><img id="black-img" src="/public/img/login_black.png" alt=""><img id="white-img" src="/public/img/login_white.png" alt=""> <span>Entrar</span> </button>
+</form>
+ </section>
+       
 
     </main>
 
@@ -144,20 +124,7 @@
     </section>
     </main>
 
-    <footer>
-        <div id="shopping-bar">
-            <div id="shopping-bar-text">
-                <p>Todos os direitos reservados a DIY© </p>
-            </div>
-            <div id="shopping-bar-button">
-                <div id="pagamento">
-                    <img src="/public/img/mastercard.svg" alt="">
-                    <img src="/public/img/visa.svg" alt="">
-                    <img src="/public/img/paypal.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,637 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+
+body * {
+
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    font-size: .9rem;
+    background-color: #3b3d3f;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+#menu a {
+    color: white;
+
+}
+
+
+#menu a:visited {
+    color: white;
+
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 33.33%;
+}
+
+header>nav>a>img {
+    width: 10rem;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.menu-icons {
+    width: 1.5rem;
+    color: white;
+}
+
+.icon-small {
+    width: .75rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
+}
+
+#menu-sandwich {
+    display: none;
+    cursor: pointer;
+
+}
+
+
+
+/* daqui pra baixo não tem mais nada relacionado ao header */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+
+
+
+
+
+.pedidos {
+
+    color: #212529;
+    text-align: center;
+}
+
+.seus-pedidos {
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.frase {
+    letter-spacing: .1em;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+.menu-horizontal {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 1rem;
+
+}
+
+
+#listagem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 70%;
+    gap: 2rem
+}
+
+#menu-inicial {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#menu-endereco {
+    background-color: #3b3d3f;
+}
+
+#menu-pagamento {
+    background-color: #585b5e;
+}
+
+.menu-finalizacao {
+    display: flex;
+    flex-direction: row;
+    width: 49.5%;
+    height: 4rem;
+
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-box {
+    height: 15rem;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+#forma-pagamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+#forma-pagamento>div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+
+
+}
+
+#sessao-pagamento-descricao {
+    justify-content: center;
+    background-color: #3b3d3f;
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+}
+
+#sessao-pagamento {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#sessao-pagamento span {
+    text-transform: uppercase;
+
+}
+
+#pagamento-parcelado {
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #3b3d3f1f;
+
+    padding: 1rem;
+
+}
+
+.pagamento-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#pagamento-avista {
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #3b3d3f1f;
+
+
+}
+
+#pagamento-avista>span {
+    font-size: 1.5rem;
+
+}
+
+#pagamento-parcelado>span {
+    font-size: 1.5rem;
+
+}
+
+
+.condicao-pagamento {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.condicao-pagamento button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    height: 3rem;
+    background-color: #3b3d3fdc;
+    border: 0px;
+    color: white;
+    font-size: 1rem;
+}
+
+.condicao-pagamento button>img {
+    width: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+.menu-vertical {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.menu-vertical div{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3d3f1f;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+   
+}
+.menu-vertical div>div{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+
+  
+}
+
+.menu-vertical div:last-child{
+    border-bottom: 0px
+    
+}
+.menu-vertical div:last-child div:last-child span:last-child{
+    font-weight: bolder;
+    
+}
+
+
+
+
+
+
+
+
+
+.sobre {
+    background-color: #dedfe1;
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+}
+
+#sobre-links {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sobre>div {
+    padding: 4rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+}
+
+.links {
+    gap: 1rem;
+    width: 50%;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #404142;
+}
+
+#texto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+#texto>span {
+    color: #404142;
+}
+
+#texto>p {
+    color: #404142;
+    width: 80%;
+}
+
+.links a {
+    color: #404142;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.links a:visited {
+    color: #404142;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+/*Início da responsividade da main*/
+
+
+@media (max-width: 1366px) {
+
+    #listagem {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1190px) {
+    #listagem {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .menu-horizontal {
+
+        width: 100%;
+    }
+
+    .menu-vertical {
+        order: -1;
+        width: 100%;
+    }
+
+    .menu-vertical>ul {
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .menu-vertical>ul>li {
+        width: 14rem;
+        height: 4rem;
+
+    }
+
+}
+
+@media (max-width: 1140px) {
+
+    .menu-vertical>ul>li {
+        font-size: 1.3rem;
+        width: 48%;
+        height: 4rem;
+
+    }
+
+    .menu-vertical>ul>li>img {
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 1020px) {
+
+    header {
+        font-size: 1rem;
+    }
+
+}
+@media (max-width: 950PX) {
+
+    .sobre>div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #texto{
+        width: 100%;
+    }
+    #texto p{
+        width: 100%;
+    }
+    #sobre-links{
+        width: 100%;
+        
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .links h3{
+        display: flex;
+        justify-content: center;
+        
+    }
+  
+
+}
+
+
+
+
+
+@media (max-width: 745px) {
+    .menu-vertical>ul>li {
+        font-size: 1rem;
+    }
+
+    #forma-pagamento>div {
+        flex-direction: column;
+    }
+
+    .menu-box {
+        width: 100%;
+    }
+
+    main {
+        height: auto;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 670px) {
+    #nav-menu {
+        display: none;
+    }
+
+    #menu-user {
+        display: none;
+    }
+
+    #menu-dropdown {
+        display: none;
+    }
+
+    #menu-cart {
+        display: none;
+    }
+
+    #menu-sandwich {
+        display: block;
+    }
+
+    #nav-logo {
+        width: 50%;
+    }
+
+    #icons {
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 605px) {
+    .menu-vertical>ul>li {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 525px) {
+
+    .seus-pedidos {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 421px) {
+
+    .seus-pedidos {
+        font-size: 2rem;
+    }
+
+    .menu-finalizacao span {
+        font-size: 1.1rem;
+
+    }
+
+    .condicao-pagamento button {
+        width: 48%;
+    }
+
+
+}
+
+@media (max-width: 415px) {
+
+    .menu-vertical>ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-vertical>ul>li {
+        width: 100%;
+    }
+    .sobre>div{
+        padding: 2rem;
+    }
+
+
+}
+
+@media (max-width: 373px) {
+    .condicao-pagamento span {
+        font-size: 1rem;
+    }
+
+    .menu-vertical>ul>li>a {
+        justify-content: space-between;
+    }
+
+    .menu-vertical>ul>li>a>span {
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .sobre>div{
+        padding: 1rem;
+    }
+}
