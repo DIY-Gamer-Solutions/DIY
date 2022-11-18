@@ -1,0 +1,397 @@
+body { 
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  margin: auto;
+}
+
+body{
+  width: 100%;
+}
+ /* header apartir daqui */
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: 100%;
+  top: 0;
+  font-size: .9rem;
+  background-color: #212529;
+  align-items: center;
+  
+}
+
+a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
+
+header>nav>a>img {
+  width: 10rem;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.menu-icons {
+  width: 1.5rem;
+  color: white;
+}
+
+.icon-small {
+  width: .75rem;
+  margin-right: 1rem;
+  margin-left: .5rem;
+}
+
+#menu-sandwich {
+  display: none;
+
+}
+
+@media (max-width: 520px) {
+
+  #nav-menu {
+      display: none;
+  }
+
+  #menu-user {
+      display: none;
+  }
+
+  #menu-dropdown {
+      display: none;
+  }
+
+  #menu-cart {
+      display: none;
+  }
+
+  #menu-sandwich {
+      display: initial;
+  }
+
+  header nav {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+  }
+}
+
+/* main apartir daqui */
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    box-sizing: content-box;
+    padding-top: 15px;
+    
+
+}
+
+.fm {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: center;
+    color: #c4c4c8 ;
+}
+
+.titolo {
+    text-transform: uppercase ! important;
+    letter-spacing: .1em;
+    font-weight: 700;    
+    text-align: center;
+    color: grey;
+    margin: auto;
+}
+
+.F1 {
+    position: relative;
+    left: 30px;
+    top: 30px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-family: hk grotesk, sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    box-sizing: border-box;
+    padding: calc(15px / 2);
+    margin: auto;
+}
+
+fieldset {
+
+    height: 250px;
+    border: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+label {
+    text-align: left;
+    font-size: larger;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    color: grey;
+    
+}
+
+input[type=file] {
+    display: none;
+}
+
+.file{
+    padding: 1px;
+    width: 200px;
+    background-color: #FFF;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+    font-size: small;
+    transition: .5s;
+}
+
+.file:hover{
+    background-color: grey;
+    color: #FFF;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 12px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+    color: grey;
+    cursor: pointer;
+    accent-color: grey;
+    /* appearance: none; */
+
+}
+
+
+button {
+    width: 200px;    
+    padding: 3px ;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: gray;
+    background-color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s;
+    margin: auto;
+    text-align: center;
+ 
+    
+    
+}
+
+.fim{
+  display: flex;
+  align-items: center;
+}
+
+button:hover{
+    background-color: grey;
+    color: #FFF;
+}
+ 
+/* footer apartir daqui */
+
+.sobre {
+    background-color: #dedfe1;
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    margin: auto;
+    }
+    
+    #sobre-links {
+      width: 40%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .sobre>div {
+    padding: 4rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    
+    }
+    
+    .links{
+    gap: 1rem;
+    width: 50%;
+    }
+    
+    .links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      color: #404142;
+    }
+    
+    #texto {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+      text-align: justify;
+    }
+    
+    #texto>span {
+      color: #404142;
+    }
+    
+    #texto>p {
+      color: #404142;
+      width: 80%;
+    }
+    
+    
+    .links a {
+      color: #404142;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    .links a:visited {
+      color: #404142;
+      background-color: transparent;
+      text-decoration: none;
+    
+    }
+    
+    @media (max-width: 825px){
+    
+      .description {
+        margin-right: 0rem;
+      }
+    
+      .first_homeimage{
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .second_homeimage{
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .third_homeimage{
+        align-items:center;
+        justify-content: flex-end;
+      }
+    }
+    
+    @media (max-width:796px) {
+      .sobre>div{
+        flex-direction: column;
+        gap: 2rem;
+      }
+    
+      #sobre-links {
+        width: 100%;
+        flex-direction: row;
+      }
+    
+      #texto {
+        width: 100%;
+      }
+    
+      #texto p {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 510px) {
+      .sobre {
+        height: 1000px;
+      }
+    }
+    
+    
+    @media (max-width: 431px){
+    
+      .description>p {
+        letter-spacing: .4em;
+        font-size: 10px;
+      }
+      
+      .description>h1 {
+        letter-spacing: .4em;
+        font-size: 25px;
+      }
+    }
+    
+    @media (max-width: 420px) {
+      .sobre {
+        height: 1200px;
+      }
+    
+      .sobre>div {
+        padding: 2rem;
+      }
+    }
+    
+    @media (max-width: 328px) {
+      .sobre>div {
+        padding: 2rem;
+      }
+    }
