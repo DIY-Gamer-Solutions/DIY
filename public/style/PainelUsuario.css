@@ -53,11 +53,20 @@ header>nav>a>img {
   width: 10rem;
 }
 
+#nav-hamburguer {
+  display: none;
+}
+
 #menu {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+}
+
+#menu-user {
+  display: flex;
+  flex-direction: row;
 }
 
 #icons {
@@ -66,6 +75,7 @@ header>nav>a>img {
   align-items: flex-end;
   justify-content: flex-end;
   margin-right: 1rem;
+  gap: 1rem;
 }
 
 .menu-icons {
@@ -75,8 +85,6 @@ header>nav>a>img {
 
 .icon-small {
   width: .75rem;
-  margin-right: 1rem;
-  margin-left: .5rem;
 }
 
 #menu-sandwich {
@@ -87,59 +95,35 @@ header>nav>a>img {
 
 @media (max-width: 520px) {
 
-  #nav-menu {
+#nav-hamburguer {
       display: block;
       position: absolute;
-      left: 15.8rem;
+      right: -100rem;
       top: 4.3rem;
       height: 5rem;
       background: #212529;
-      transform: translateX(110px);
       transition: .5s;
-  }
+}
 
-#menu{
+.nav-hamburguer-open {
+  right: 0 !important;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#menu-hamburguer{
   flex-direction: column;
   gap: .7rem;
   align-items: flex-start;
   justify-content: center;
   margin-left: 1.5rem;
-
 }
 
-#menu-user {
+#icones {
   display: block;
-  position: absolute;
-  left: 21.7rem;
-  top: 4.3rem;
-  align-items: center;
-  justify-content: center;
-  transform: translateX(110px);
-  transition: .5s;
 }
-
-
-  #menu-dropdown {
-    display: block;
-    position: absolute;
-    left: 22.9rem;
-    top: 5rem;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(110px);
-    transition: .5s;
-  }
-
-  #menu-cart {
-    display: block;
-    position: absolute;
-    left: 21.7rem;
-    top: 6.9rem;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(110px);
-    transition: .5s;
-  }
 
   #menu-sandwich {
       display: block;
