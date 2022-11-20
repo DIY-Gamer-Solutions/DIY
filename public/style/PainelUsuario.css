@@ -103,6 +103,7 @@ header>nav>a>img {
       height: 5rem;
       background: #212529;
       transition: .5s;
+      width: 10rem;
 }
 
 .nav-hamburguer-open {
@@ -116,9 +117,8 @@ header>nav>a>img {
 #menu-hamburguer{
   flex-direction: column;
   gap: .7rem;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  margin-left: 1.5rem;
 }
 
 #icones {
@@ -319,8 +319,51 @@ width: 50%;
 
  @media (max-width:866.21px) {
   .menu-vertical {
-    left: 4.6rem;
+    left: 2rem;
     position: relative;
+    bottom:0rem;
+  }
+  
+  .menu-vertical>ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+ }
+
+ @media (max-width:837.52px) {
+  .menu-vertical {
+    left: 2rem;
+    position: relative;
+    bottom:0rem;
+  }
+  
+  .menu-vertical>ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+ }
+
+ @media (max-width:835.31px) {
+  .menu-vertical {
+    left: 2.5rem;
+    position: relative;
+    bottom:0rem;
+  }
+  
+  .menu-vertical>ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+
+
+ }
+
+ @media (max-width:811.13px) {
+  .menu-vertical {
+    left: 8rem;
     bottom:0rem;
   }
   
@@ -329,11 +372,37 @@ width: 50%;
     flex-flow: row wrap;
     align-items: center;
   }
+
+  .sair {
+    margin-left: -20rem;
+  }
+
+  .adress {
+    margin-right: 20rem;
+  }
  }
 
  @media (max-width:656.55px) {
   .menu-horizontal {
     margin-left: 2rem;
+  }
+
+  .menu-vertical {
+    left: 2rem;
+    bottom:0rem;
+  }
+
+  .menu-vertical>ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .sair {
+    margin-left: 0rem;
+  }
+  .adress {
+    margin-right: 0rem;
   }
  }
 
@@ -361,7 +430,7 @@ width: 50%;
   }
 
   .menu-vertical {
-    left: 3.5rem;
+    left:1rem;
     position: relative;
     bottom:0rem;
   }
@@ -417,7 +486,7 @@ width: 50%;
 
 @media (max-width:466.76px) {
   .menu-vertical {
-    left: 6rem;
+    left: 1rem;
     position: relative;
     bottom:0rem;
   }
@@ -425,7 +494,7 @@ width: 50%;
 
 @media (max-width:416px) {
   .menu-vertical {
-    left: 6rem;
+    left: 1rem;
     position: relative;
     bottom:0rem;
   }
@@ -444,7 +513,7 @@ width: 50%;
   }
 
   .menu-vertical {
-    left: 4.5rem;
+    left: 1rem;
     position: relative;
     bottom:0rem;
   }
@@ -453,7 +522,7 @@ width: 50%;
 @media (max-width: 320px) {
 
   .menu-vertical {
-    left: 3rem;
+    left: 0rem;
     position: relative;
     bottom:0rem;
   }
