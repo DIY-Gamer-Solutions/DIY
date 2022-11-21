@@ -31,8 +31,7 @@ header {
     font-size: .9rem;
     background-color: #3b3d3f;
 }
-
-a {
+li a {
     background-color: transparent;
     text-decoration: none;
 }
@@ -259,7 +258,7 @@ main {
     color: #585b5e;
   
 }
-#sessao-pagamento  button{
+#sessao-pagamento  a{
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
@@ -270,8 +269,15 @@ main {
     border: 0px;
     color: white;
     font-size: 1rem;
+    text-decoration: none;
   
 }
+#sessao-pagamento  a:visited{
+    
+    text-decoration: none;
+  
+}
+
 
 
 
