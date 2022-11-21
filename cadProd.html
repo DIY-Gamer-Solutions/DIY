@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/cadProd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
+    <title>Cadastro de Produto</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-logo">
+            <a href="index.html"><img class="logo" src="img/DIY.png" alt=""></a>
+        </nav>
+        <nav id="nav-menu">
+            <ul id="menu">
+                <li><a href="#first">ENTRY EDITION</a></li>
+                <li><a href="#second">GAMER EDITION</a></li>
+                <li><a href="#third">WORK EDITION</a></li>
+            </ul>
+        </nav>
+        <nav id="icons">
+            <a id="menu-user" href=""><img class="menu-icons" src="img/account.png" alt=""></a>
+            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="img/arrow-down.png" alt=""></a>
+            <a id="menu-cart" href=""><img class="menu-icons" src="img/cart.png" alt=""></a>
+            <a id="menu-sandwich" href=""><img class="menu-icons" src="img/menu hamburguer.png" alt=""></a>
+        </nav>
+
+    </header>
+    <br>
+    <main>
+        <section class="fm">
+            <h1 class="titolo">Cadastro de Produtos</h1>
+            <form action="" class="F1">
+                <fieldset>
+                    <div class="cadprod">
+                        <label for="nome">Nome do Produto</label>
+                        <input type="text" name="Nome" id="nome">
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="descrição">Descrição do Produto</label>
+                        <br>
+                        <!-- <textarea name="" id="descrição" cols="60" rows="3"></textarea> -->
+                        <input type="text" >
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="">Imagem do Produto</label>
+                        <label for="arquivo" class="file">Selecionar</label>
+                        <input type="file" accept="image/*" name="arquivo" id="arquivo" />
+
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="preço">Preço do Produto</label>
+                        <input type="number" id="preço" name="dinheiro" value="R$ " min="0"
+                            class="dinheiro form-control" />
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="categoria">Categoria do Produto</label>
+                        <br>
+                        <input TYPE="radio" NAME="OPCAO" value="ENTRY EDITION"> ENTRY EDITION
+                        <input TYPE="radio" NAME="OPCAO" value="GAMER EDITION"> GAMER EDITION
+                        <input TYPE="radio" NAME="OPCAO" value="WORK EDITION"> WORK EDITION
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="qtd">Estoque</label>
+                        <br>
+                        <input type="number" name="Estoque" min="0" id="qtd">
+                    </div>
+                    <br>
+                    <div class="fim">
+                        <button type="submit" class="btn">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <br>
+    <section class="sobre">
+        <div>
+            <div id="texto">
+                <h1>DO IT YOURSELF</h1>
+                <span>Gamer Solutions</span>
+                <h2>SOBRE NÓS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
+                    ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
+                    Fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
+                    ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
+                    Fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
+                    ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
+                    Fugit?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
+                    ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
+                    Fugit?</p>
+
+
+            </div>
+            <div id="sobre-links">
+                <div class="links">
+                    <h3>COMPUTADORES</h3>
+                    <ul>
+                        <li><a href="">Entry Edition</a></li>
+                        <li><a href="">Gamer Edition</a></li>
+                        <li><a href="">Work Edition</a></li>
+
+                    </ul>
+                </div>
+                <div class="links">
+                    <h3>LINKS ÚTEIS</h3>
+                    <ul>
+                        <li>
+                            <a href="">Trocas</a>
+                        </li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
