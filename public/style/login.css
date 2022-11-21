@@ -143,6 +143,7 @@ section {
 }
 
 #cadastro {
+  display: flex;
   background-color: #F8F9FA;
   border-radius: 30px;
   width: 40%;

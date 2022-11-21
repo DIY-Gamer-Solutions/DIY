@@ -126,6 +126,8 @@ header>nav>a>img {
 
 #cadastro {
   position: fixed;
+  z-index: 1;
+  overflow: auto;
   background-color: #000000b4;
   width: 100%;
   height: 100%;
@@ -135,6 +137,7 @@ header>nav>a>img {
   justify-content: center;
   align-items: center;
 
+
 }
 
 #cadastro>div {
@@ -142,10 +145,9 @@ header>nav>a>img {
   padding: 3rem;
   border-radius: 3rem;
   gap: 3rem;
+  
 }
 #cadastro>div>div:first-of-type {
-
-
   justify-content: space-between;
 }
 #cadastro>div>div {

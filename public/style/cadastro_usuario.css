@@ -137,14 +137,14 @@ section {
   background-color: #F8F9FA;
   border-radius: 30px;
   width: 40%;
-  height: 80vh;
+  min-height: 80vh;
   background-position: center;
   gap: 2rem;
   margin: 2rem;
   padding: 2rem;
 }
 
-#cadastro>div {
+#titulo-form {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -221,7 +221,19 @@ section {
   height: 60%;
 }
 
-
+.erros{
+  display: flex;
+  border: 2px red solid;
+  flex-direction: row;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  width: 100%;
+  
+}
+.no-erros{
+  display: none;
+}
 
 
 
