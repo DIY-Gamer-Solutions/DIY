@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
     <title>DIY - Gamer Solutions</title>
+    <script src="/public/js/hamburguer.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
         <nav id="nav-logo">
             <a href="/public/views/home.html"><img class="logo" src="/public/img/DIY.png" alt=""></a>
         </nav>
+
         <nav id="nav-menu">
             <ul id="menu">
                 <li><a href="#first">ENTRY EDITION</a></li>
@@ -25,14 +27,25 @@
                 <li><a href="#third">WORK EDITION</a></li>
             </ul>
         </nav>
-        <nav id="icons">
-            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
-            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png"
-                    alt=""></a>
-            <a id="menu-cart" href="/public/views/Carrinho.html"><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
-            <a id="menu-sandwich" href=""><img class="menu-icons" src="/public/img/menu hamburguer.png" alt=""></a>
+
+        <nav id="nav-hamburguer">
+            <ul id="menu-hamburguer">
+                <li><a href="#first">ENTRY EDITION</a></li>
+                <li><a href="#second">GAMER EDITION</a></li>
+                <li><a href="#third">WORK EDITION</a></li>
+            </ul>
         </nav>
 
+        <nav id="icons">
+            <a id="menu-user" href="">
+                <img class="menu-icons" src="/public/img/account.png" alt="">
+                <img class="menu-icons icon-small" src="/public/img/arrow-down.png"alt="">
+            </a>
+            <a id="menu-cart" href=""><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
+            <div id="menu-sandwich" >
+                <img class="menu-icons" src="/public/img/menu hamburguer.png" alt="">
+            </div>    
+        </nav>
     </header>
 
     <main>
@@ -68,18 +81,17 @@
                     </li>
                 </ul>
             </div>
-        </section>
 
-        <section>
             <div class="menu-vertical">
                 <ul>
+                    
                     <li><a href="#"><img class="icones" src="/public/img/pedido.png" alt=""></a>Pedidos</li>
                     <li><a href="#"><img class="icones" src="/public/img/carteira-de-identidade.png" alt=""></a>Dados Pessoais</li>
-                    <li><a href="#"><img class="icones" src="/public/img/endereco-residencial.png" alt=""></a>Endereço</li>
-                    <li><a href="#"><img class="icones" src="/public/img/sair.png" alt=""></a>Sair</li>
+                    <li class="adress"><a href="#"><img class="icones" src="/public/img/endereco-residencial.png" alt=""></a>Endereço</li>
+                    <li class="sair"><a href="#"><img class="icones" src="/public/img/sair.png" alt=""></a>Sair</li>
                 </ul>
             </div>
-        </section>
+ 
 
     </main>
 
