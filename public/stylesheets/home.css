@@ -10,8 +10,7 @@
 }
 
 body * {
-  display: flex;
-  flex-flow: column;
+
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -34,6 +33,10 @@ a {
   background-color: transparent;
   text-decoration: none;
 }
+li{
+  list-style: none;
+}
+
 
 a:visited {
   color: white;
@@ -250,7 +253,7 @@ section {
 }
 
 .first_homeimage {
-  background-image: url("/public/img/astra.png");
+  background-image: url("/public/images/astra.png");
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -260,7 +263,7 @@ section {
 }
 
 .second_homeimage {
-  background-image: url("/public/img/atlas.jpg");
+  background-image: url("/public/images/atlas.jpg");
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -269,7 +272,7 @@ section {
 }
 
 .third_homeimage {
-  background-image: url("/public/img/index2.webp");
+  background-image: url("/public/images/index2.webp");
   background-size: cover;
   display: flex;
   align-items: flex-end;
