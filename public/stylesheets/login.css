@@ -315,6 +315,52 @@ section {
 
 /*configuração das imagens feita.*/
 
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#shopping-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #3b3d3f !important;
+  font-size: .9rem;
+  min-height: 4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: hsl(38, 44%, 96%) !important;
+
+}
+
+#shopping-bar-text {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+#shopping-bar-button {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+#pagamento {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+#pagamento img {
+  width: 2rem;
+}
+
 @media (max-width: 1366px) {
   #cadastro {
 
