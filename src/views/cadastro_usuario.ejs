@@ -1,0 +1,53 @@
+
+<%- include('partials/header') %> 
+    <main>
+
+
+
+        <section id="cadastro-user">
+            <div id="titulo-form">
+                <h2>NOVA CONTA</h2>
+                <span>Já tem conta? <a id="login-link" href="/public/views/login.html">Faça Login</a></span>
+            </div>
+            
+            <div class="no-erros" id="div-erros">
+                <ul>
+
+                </ul>
+            </div>
+
+            <form id="cadastro-user-from" action="/public/views/home.html">
+                <div class="cadastro-user-itens">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="cadastro-user-itens">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="cadastro-user-itens">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="cadastro-user-itens">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" minlength="11" maxlength="11">
+                </div>
+                <div class="cadastro-user-itens">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                <div class="cadastro-user-itens">
+                    <label for="conf-senha">Confirme a senha</label>
+                    <input type="password" id="conf-senha" name="conf-senha">
+                </div>
+                <button type="submit" id="submit-buton"><img id="black-img" src="/public/images/login_black.png"
+                        alt=""><img id="white-img" src="/public/images/login_white.png" alt=""> <span>Cadastrar</span>
+                </button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <%- include('partials/footer') %> 

@@ -7,6 +7,7 @@ var btn = document.getElementById("menu-user");
 var span = document.getElementsByClassName("close")[0];
 
 
+
 btn.onclick = function() {
   modal.style.display = "flex";
 }

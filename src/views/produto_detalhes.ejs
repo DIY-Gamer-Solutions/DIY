@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/style/produto_detalhes.css">
-    <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
-    <title>PC Gamer X | DIY</title>
-</head>
-<body>
-    <header>
-        <nav id="nav-logo">
-            <a href="/public/views/home.html"><img class="logo" src="/public/img/DIY.png" alt=""></a>
-        </nav>
-        <nav id="nav-menu">
-            <ul id="menu">
-                <li><a href="/public/views/produto.html">ENTRY EDITION</a></li>
-                <li><a href="/public/views/produto.html">GAMER EDITION</a></li>
-                <li><a href="/public/views/produto.html">WORK EDITION</a></li>
-            </ul>
-        </nav>
-        <nav id="icons">
-            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
-            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png" alt=""></a>
-            <a id="menu-cart" href="/public/views/Carrinho.html"><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
-            <a id="menu-sandwich" href=""><img class="menu-icons" src="/public/img/menu-4-512.png" alt=""></a>
-        </nav>
-
-    </header>
+<%- include('partials/header') %> 
     <main>
         <section id="case">
             <div>
@@ -40,14 +8,6 @@
 
 
         </section>
-
-
-
-
-
-
-
-
 
         <section class="pc-information" id="gpu">
             <div class="background-img" id="gpu-image">
@@ -254,81 +214,5 @@
         </section>
 
 
-        <section id="shopping-bar">
-            <div id="shopping-bar-text">
-                <p>Core i7 12700k | RTX 4090 | Mem 32GB | Ssd 2tb | Water Cooler</p>
-                <img src="/public/img/info-2-512.png" alt="">
-            </div>
-            <div id="shopping-bar-button">
-                <div id="shopping-bar-button-text">
-                    <span>À vista: R$ 53.749,00</span>
-                    <span>ou 12x de R$ 5.090</span>
-                </div>
-
-                <button href=""><img src="/public/img/black-cart.png" alt="">Comprar</button>
-            </div>
-        </section>
-
-
-
-
-        <section class="sobre">
-            <div>
-                <div id="texto">
-                    <h1>DO IT YOURSELF</h1>
-                    <span>Gamer Solutions</span>
-                    <P>
-                    <h2>Sobre Nós</h2>
-                    </P>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
-                        ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
-                        Fugit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
-                        ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
-                        Fugit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
-                        ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
-                        Fugit?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quae aspernatur eligendi unde molestias consequatur officiis, doloremque, et illum quas,
-                        ipsa cupiditate blanditiis quod ducimus accusantium repellendus exercitationem veniam obcaecati?
-                        Fugit?</p>
-
-
-                </div>
-                <div id="sobre-links">
-                    <div class="links">
-                        <h3>Computadores</h3>
-                        <ul>
-                            <li>
-                                <a href="">Entry Edition</a>
-                            </li>
-                            <li><a href="">Gamer Edition</a></li>
-                            <li><a href="">Work Edition</a></li>
-    
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <h3>Links uteis</h3>
-                        <ul>
-                            <li><a href="">Trocas</a> </li>
-                            <li><a href="">Contato</a> </li>
-    
-                        </ul>
-                    </div>
-    
-                </div>
-               
-            </div>
-        </section>
     </main>
-
-
-
-
-
-</body>
-</html>
+    <%- include('partials/footer_compra') %> 

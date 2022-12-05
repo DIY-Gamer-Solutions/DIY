@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/style/produto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/public/img/DIY_Logo.ico" type="image/x-icon">
-    <title>DIY - Gamer Solutions</title>
-</head>
-<body>
-    <header>
-        <nav id="nav-logo">
-            <a href="/public/views/home.html"><img class="logo" src="/public/img/DIY.png" alt=""></a>
-        </nav>
-        <nav id="nav-menu">
-            <ul id="menu">
-                <li><a href="/public/views/produto.html">ENTRY EDITION</a></li>
-                <li><a href="/public/views/produto.html">GAMER EDITION</a></li>
-                <li><a href="/public/views/produto.html">WORK EDITION</a></li>
-            </ul>
-        </nav>
-        <nav id="icons">
-            <a id="menu-user" href=""><img class="menu-icons" src="/public/img/account.png" alt=""></a>
-            <a id="menu-dropdown" href=""><img class="menu-icons icon-small" src="/public/img/arrow-down.png" alt=""></a>
-            <a id="menu-cart" href="/public/views/Carrinho.html"><img class="menu-icons" src="/public/img/cart.png" alt=""></a>
-            <a id="menu-sandwich" href=""><img class="menu-icons" src="/public/img/menu-4-512.png" alt=""></a>
-        </nav>
-
-    </header>
+<%- include('partials/header') %> 
 
     <main>
         <section class="pcs">
             <div class="block1" id="img1">
                 <h1>package.json</h1>
                 <span>um novo conceito</span>
-                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
+                <a href="/produto_detalhes"><button>comprar</button></a>
                 
             </div>
 
@@ -45,21 +13,21 @@
 
                 <h1>script.js</h1>
                 <span>quebre todas as barreiras</span>
-                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
+                <a href="/produto_detalhes"><button>comprar</button></a>
             </div>
 
             <div class="block1" id="img3">
 
                 <h1>index.exe</h1>
                 <span>tudo que você precisa</span>
-                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
+                <a href="/produto_detalhes"><button>comprar</button></a>
             </div>
 
             <div class="block1" id="img4">
 
                 <h1>ATLAS</h1>
                 <span>Supere todos desafios</span>
-                <a href="/public/views/produto_detalhes.html"><button>comprar</button></a>
+                <a href="/produto_detalhes"><button>comprar</button></a>
             </div>
         </section>
         <section class="faq">
@@ -109,20 +77,4 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div id="shopping-bar">
-            <div id="shopping-bar-text">
-                <p>Todos os direitos reservados a DIY© </p>
-            </div>
-            <div id="shopping-bar-button">
-                <div id="pagamento">
-                    <img src="/public/img/mastercard.svg" alt="">
-                    <img src="/public/img/visa.svg" alt="">
-                    <img src="/public/img/paypal.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+    <%- include('partials/footer') %> 

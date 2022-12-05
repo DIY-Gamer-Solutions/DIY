@@ -2,99 +2,258 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-}
-
-script {
-    display: none;
-}
-
-html {
-    width: 100%;
-}
-
-body * {
-
+  
+  }
+  
+  body * {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+  
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
-
-}
-
-body {
+  }
+  
+  body {
     width: 100%;
-
-}
-
-
-/* inicio do header */
-header {
+  }
+  
+  header {
     width: 100%;
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 0;
-
-
     font-size: .9rem;
-
-}
-
-a {
+  }
+  
+  a {
     color: white;
     background-color: transparent;
     text-decoration: none;
-}
-
-a:visited {
+  }
+  li{
+    list-style: none;
+  }
+  
+  
+  a:visited {
     color: white;
     background-color: transparent;
     text-decoration: none;
-
-}
-
-header nav {
+  
+  }
+  
+  header nav {
     display: flex;
     flex-direction: row;
     width: 33.33%;
-}
-
-header>nav>a>img {
+  }
+  
+  header>nav>a>img {
     width: 10rem;
-}
-
-#menu {
+  }
+  
+  #menu {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-}
-
-#icons {
+  }
+  
+  #icons {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
     margin-right: 1rem;
-}
-
-.menu-icons {
+  }
+  
+  #menu-user {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .menu-icons {
     width: 1.5rem;
     color: white;
-}
-
-.icon-small {
+  }
+  
+  .icon-small {
     width: .75rem;
     margin-right: 1rem;
     margin-left: .5rem;
-}
-
-#menu-sandwich {
+  }
+  
+  #menu-sandwich {
     display: none;
-
-}
-
+  
+  }
+  
+  
+  @media (max-width: 520px) {
+  
+    #nav-menu {
+      display: none;
+    }
+  
+    #menu-user {
+      display: none;
+    }
+  
+    #menu-dropdown {
+      display: none;
+    }
+  
+    #menu-cart {
+      display: none;
+    }
+  
+    #menu-sandwich {
+      display: initial;
+    }
+  
+    header nav {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+    }
+  }
+  
+  /* daqui pra baixo não tem mais nada relacionado ao header */
+  .close {
+    font-size: 2rem;
+  
+  }
+  
+  #cadastro {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: #000000b4;
+    width: 100vw;
+    height: 100vh;
+  top: 0;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  
+  #cadastro>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 3rem;
+    gap: 1rem;
+    
+  }
+  #cadastro>div>div:first-of-type {
+    justify-content: space-between;
+  }
+  #cadastro>div>div {
+  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  
+  #cadastro-from {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .form-itens {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: left;
+  
+  }
+  
+  .form-itens {
+  width: 15rem;
+  }
+  .form-itens label {
+    font-size: 20px;
+  width: 15rem;
+    text-align: justify;
+    color: #868e96;
+  }
+  
+  .form-itens input {
+    width: 100%;
+    background-color: transparent;
+    border: #868e96 1px solid;
+    height: 2rem;
+    width: 15rem;
+  }
+  
+  #cadastro-from button {
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    height: 2rem;
+    justify-content: center;
+    gap: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    border: #3b3d3f 1px solid;
+    margin-top: 2rem;
+    align-items: center;
+  
+  }
+  #cadastro span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #cadastro-from button:hover {
+    background-color: #3b3d3f;
+    color: white;
+  
+  }
+  
+  #cadastro-from button:hover #white-img {
+    display: block;
+  
+  }
+  
+  #cadastro-from button:hover #black-img {
+    display: none;
+  
+  }
+  
+  #cadastro-from #white-img {
+    display: none;
+  }
+  
+  
+  #cadastro-from button>img {
+    height: 60%;
+  }
+  
+  
+  
+  
+  
+  #login-link {
+    color: #F59B1A;
+  }
+  
+  #login-link:hover {
+    text-decoration: underline;
+  }
 /* fim do header
 
 /////////////
@@ -106,7 +265,7 @@ inicio main */
 #case {
     width: 100%;
     height: 100vh;
-    background-image: url("/public/img/index2.webp");
+    background-image: url("/images/index2.webp");
     background-size: cover;
     background-position: 80% 50%;
 
@@ -178,7 +337,7 @@ inicio main */
 }
 
 #gpu-image {
-    background-image: url("/public/img/rtx-4090.jpg");
+    background-image: url("/images/rtx-4090.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -263,13 +422,13 @@ inicio main */
 
 
 #ssd-image {
-    background-image: url("/public/img/ssd.png");
+    background-image: url("/images/ssd.png");
     background-size: cover;
     background-position: center;
 }
 
 #cooler-image {
-    background-image: url("/public/img/watercooler.avif");
+    background-image: url("/images/watercooler.avif");
     background-size: cover;
     background-position: center;
 }
@@ -294,13 +453,13 @@ inicio main */
 
 
 #construction-image {
-    background-image: url("/public/img/cronstrucao_n.jpg");
+    background-image: url("/images/cronstrucao_n.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #performace-image {
-    background-image: url("/public/img/performace.avif");
+    background-image: url("/images/performace.avif");
     background-size: cover;
     background-position: center;
 }
