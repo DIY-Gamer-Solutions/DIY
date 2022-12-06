@@ -7,3 +7,4 @@ router.get(('/' + page), function(req, res, next) {
 });
 
 module.exports = router;
+
