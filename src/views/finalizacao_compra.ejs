@@ -1,0 +1,85 @@
+
+<%- include('partials/header') %> 
+
+    <main>
+
+        <section class="painel">
+            <div class="container">
+                <div class="pedidos">
+                    <h1 class="seus-pedidos">Finalização</h1>
+                    <div class="frase">
+                        <div>
+                            <p>Como deseja pagar?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="listagem">
+            <div class="menu-horizontal">
+
+                <div id="menu-inicial">
+                    <a id="menu-endereco" class="menu-finalizacao" href="/finalizacao_endereco">
+                        <div>
+                            <span>Endereço</span>
+                        </div>
+                    </a>
+                    <span id="menu-pagamento" class="menu-finalizacao">
+                        <div>
+                            <span>Pagamento</span>
+                        </div>
+                    </span>
+                </div>
+
+
+                <div id="forma-pagamento">
+
+                    <div id="sessao-pagamento-descricao">
+                        <span>Forma de Pagamento</span>
+                    </div>
+
+                    <div id="sessao-pagamento">
+
+                        <div id="pagamento-avista" class="menu-box">
+                            <span>à Vista</span>
+                            <div class="pagamento-descricao">
+                                <p>Total <span class="valor-total">R$52.500,00</span></p>
+                                <p>Nas compras por boleto você recebe 5% de desconto</p>
+                            </div>
+                            <div class="condicao-pagamento">
+                                <button><img src="/images/pagamento.png" alt=""> <span>Boleto</span> </button>
+                            </div>
+
+                        </div>
+
+
+                        <div id="pagamento-parcelado" class="menu-box">
+                            <span>Parcelamento</span>
+                            <div class="pagamento-descricao">
+                                <p>Total <span class="valor-total">R$52.500,00</span></p>
+                                <p>Parcelamento em 12x de <span class="valor-parcelado">R$4.375</span></p>
+                            </div>
+
+                            <div class="condicao-pagamento">
+                                <button><img src="/images/debit-card.png" alt=""> <span>Cartão</span> </button>
+                                <button><img src="/images/paypal.png" alt=""> <span>PayPal</span> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-vertical">
+                <div>
+                    <h1>Resumo do pedido <span>#001</span></h1>
+                    <span>Frete grátis para todo o Brasil </span>
+                    <div><span>Subtotal</span><span>R$ 52.500,00</span></div>
+                    <div><span>Frete</span><span>R$ 0,00</span></div>
+                    <div><span>Total</span><span>R$ 52.500,00</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <%- include('partials/footer') %> 

@@ -9,6 +9,11 @@ var produtoRouter = require('./routes/produto');
 var produtoDetalhesRouter = require('./routes/produto_detalhes');
 var cadastroUsuarioRouter = require('./routes/cadastro_usuario');
 var loginRouter = require('./routes/login');
+var carrinhoRouter = require('./routes/carrinho');
+var finalizacaoCompraRouter = require('./routes/finalizacao_compra');
+var finalizacaoEnderecoRouter = require('./routes/finalizacao_endereco');
+var painelUsuarioRouter = require('./routes/painel_usuario');
+var cadProdRouter = require('./routes/cad_prod');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -28,6 +33,11 @@ app.use('/', produtoRouter);
 app.use('/', produtoDetalhesRouter);
 app.use('/', cadastroUsuarioRouter);
 app.use('/', loginRouter);
+app.use('/', carrinhoRouter);
+app.use('/', finalizacaoCompraRouter);
+app.use('/', finalizacaoEnderecoRouter);
+app.use('/', painelUsuarioRouter);
+app.use('/', cadProdRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

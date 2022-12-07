@@ -98,6 +98,151 @@ header>nav>a>img {
 }
 
 
+.close {
+    font-size: 2rem;
+  
+  }
+  
+  #cadastro {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: #000000b4;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    gap: 2rem;
+  
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  
+  #cadastro>div {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 3rem;
+    gap: 1rem;
+    
+  }
+  #cadastro>div>div:first-of-type {
+    justify-content: space-between;
+  }
+  #cadastro>div>div {
+  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  
+  #cadastro-from {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .form-itens {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: left;
+  
+  }
+  
+  .form-itens {
+  width: 15rem;
+  }
+  .form-itens label {
+    font-size: 20px;
+  width: 15rem;
+    text-align: justify;
+    color: #868e96;
+  }
+  
+  .form-itens input {
+    width: 100%;
+    background-color: transparent;
+    border: #868e96 1px solid;
+    height: 2rem;
+    width: 15rem;
+  }
+  
+  #cadastro-from button {
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    height: 2rem;
+    justify-content: center;
+    gap: 1rem;
+    background-color: white;
+    text-transform: uppercase;
+    border: #3b3d3f 1px solid;
+    margin-top: 2rem;
+    align-items: center;
+  
+  }
+  #cadastro span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #cadastro-from button:hover {
+    background-color: #3b3d3f;
+    color: white;
+  
+  }
+  
+  #cadastro-from button:hover #white-img {
+    display: block;
+  
+  }
+  
+  #cadastro-from button:hover #black-img {
+    display: none;
+  
+  }
+  
+  #cadastro-from #white-img {
+    display: none;
+  }
+  
+  
+  #cadastro-from button>img {
+    height: 60%;
+  }
+  
+  
+  
+  
+  
+  #login-link {
+    color: #F59B1A;
+  }
+  
+  #login-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+
+
+
+
+
+
+
 
 /* daqui pra baixo não tem mais nada relacionado ao header */
 
@@ -469,6 +614,55 @@ main {
     text-decoration: none;
 
 }
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #shopping-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #3b3d3f !important;
+    font-size: .9rem;
+    min-height: 4rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: hsl(38, 44%, 96%) !important;
+  
+  }
+  
+  #shopping-bar-text {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+  
+  }
+  
+  #shopping-bar-button {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  #pagamento {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  
+  #pagamento img {
+    width: 6%;
+  }
+
+
+
+
+
 
 /*Início da responsividade da main*/
 

@@ -1,0 +1,86 @@
+<%- include('partials/header') %> 
+    <main>
+
+        <section class="painel">
+            <div class="container">
+                <div class="pedidos">
+                    <h1 class="seus-pedidos">Endereço</h1>
+                    <div class="frase">
+                        <div>
+                            <p>Onde lhe encontramos?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="listagem">
+            <div class="menu-horizontal">
+
+                <div id="menu-inicial">
+                    <span id="menu-endereco" class="menu-finalizacao">
+                        <div>
+                            <span>Endereço</span>
+                        </div>
+                    </span>
+                    <a id="menu-pagamento" class="menu-finalizacao" href="/finalizacao_compra">
+                        <div>
+                            <span>Pagamento</span>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div id="forma-pagamento">
+
+                    <div id="sessao-pagamento-descricao">
+                        <span>Forma de Pagamento</span>
+                    </div>
+
+                    <div id="sessao-pagamento">
+                        <form action="">
+                            <div>
+                                <div>
+                                    <label for="cep">CEP</label>
+                                    <input type="number">
+                                    <label for="endereco">Endereço(Rua,AV,ETC)</label>
+                                    <input type="text">
+                                    <label for="complemento">complemento</label>
+                                    <input type="text">
+                                    <label for="bairo">Bairo</label>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="estado">Estado</label>
+                                    <input type="text">
+                                    <label for="numero">Número</label>
+                                    <input type="number">
+                                    <label for="referenci">Ponto de Referência</label>
+                                    <input type="text">
+                                    <label for="cidade">cidade</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <a href="/finalizacao_compra">cadastrar</a>
+                        </form>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-vertical">
+                <div>
+                    <h1>Resumo do pedido <span>#001</span></h1>
+                    <span>Frete grátis para todo o Brasil </span>
+                    <div><span>Subtotal</span><span>R$ 52.500,00</span></div>
+                    <div><span>Frete</span><span>R$ 0,00</span></div>
+                    <div><span>Total</span><span>R$ 52.500,00</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('partials/footer') %> 
