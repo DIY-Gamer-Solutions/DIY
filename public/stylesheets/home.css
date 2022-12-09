@@ -127,6 +127,9 @@ header>nav>a>img {
 
 }
 
+#cadastro_off{
+  display: none;
+}
 #cadastro {
   display: flex;
   position: fixed;
