@@ -1,0 +1,53 @@
+<%- include('partials/header') %>     
+    <main>
+        <section class="fm">
+            <h1 class="titolo">Cadastro de Produtos</h1>
+            <form action="" class="F1">
+                <fieldset>
+                    <div class="cadprod">
+                        <label for="nome">Nome do Produto</label>
+                        <input type="text" name="Nome" id="nome">
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="descrição">Descrição do Produto</label>
+                        <br>
+                        <!-- <textarea name="" id="descrição" cols="60" rows="3"></textarea> -->
+                        <input type="text" >
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="">Imagem do Produto</label>
+                        <label for="arquivo" class="file">Selecionar</label>
+                        <input type="file" accept="image/*" name="arquivo" id="arquivo" />
+
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="preço">Preço do Produto</label>
+                        <input type="number" id="preço" name="dinheiro" value="R$ " min="0"
+                            class="dinheiro form-control" />
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="categoria">Categoria do Produto</label>
+                        <br>
+                        <input TYPE="radio" NAME="OPCAO" value="ENTRY EDITION"> ENTRY EDITION
+                        <input TYPE="radio" NAME="OPCAO" value="GAMER EDITION"> GAMER EDITION
+                        <input TYPE="radio" NAME="OPCAO" value="WORK EDITION"> WORK EDITION
+                    </div>
+                    <br>
+                    <div class="cadprod">
+                        <label for="qtd">Estoque</label>
+                        <br>
+                        <input type="number" name="Estoque" min="0" id="qtd">
+                    </div>
+                    <br>
+                    <div class="fim">
+                        <button type="submit" class="btn">Cadastrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <%- include('partials/footer') %>     

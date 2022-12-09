@@ -1,0 +1,98 @@
+
+<%- include('partials/header') %> 
+
+    <main>
+
+        <section class="painel">
+            <div class="container">
+                <div class="pedidos">
+                    <h1 class="seus-pedidos">Carrinho</h1>
+                    <div class="frase">
+                        <div>
+                            <p>Deseja mais alguma coisa?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="listagem">
+            <div class="menu-horizontal">
+
+                <div id="menu-inicial">
+                    <div id="menu-endereco" class="menu-finalizacao">
+                        <div>
+                            <ul>
+                                <div>
+                                    <li> item</li>
+                                </div>
+                                <div>
+                                    <li>preço</li>
+                                </div>
+                                <div>
+                                    <li>quantidade</li>
+                                </div>
+                                <div>
+                                    <li>Total</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="sessao_produto">
+                    <div class="produto">
+                        <ul>
+                            <div>
+                                <li> <img src="/images/atlas.jpg" alt=""></li>
+                            </div>
+                            <div>
+                                <li>R$ 50.000,00</li>
+                            </div>
+                            <div>
+                                <li>
+                                    <form action=""><input type="number" min="0"></form>
+                                </li>
+                            </div>
+                            <div>
+                                <li>R$ 50.000,00</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="produto">
+                        <ul>
+                            <div>
+                                <li> <img src="/images/atlas.jpg" alt=""></li>
+                            </div>
+                            <div>
+                                <li>R$ 50.000,00</li>
+                            </div>
+                            <div>
+                                <li>
+                                    <form action=""><input type="number" min="0"></form>
+                                </li>
+                            </div>
+                            <div>
+                                <li>R$ 50.000,00</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <a id="btn_comprar" href="/finalizacao_endereco">COMPRAR</a>
+            </div>
+
+
+            <div class="menu-vertical">
+                <div>
+                    <h1>Resumo do pedido <span>#001</span></h1>
+                    <span>Frete grátis para todo o Brasil </span>
+                    <div><span>Subtotal</span><span>R$ 52.500,00</span></div>
+                    <div><span>Frete</span><span>R$ 0,00</span></div>
+                    <div><span>Total</span><span>R$ 52.500,00</span></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <%- include('partials/footer') %> 

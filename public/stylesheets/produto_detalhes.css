@@ -665,9 +665,17 @@ inicio do footer */
 }
 
 #shopping-bar-text {
+    display: flex;
+    flex-direction: row;
     width: 70%;
 }
-
+#shopping-bar-text p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
 #shopping-bar-text img {
     display: none;
 }
