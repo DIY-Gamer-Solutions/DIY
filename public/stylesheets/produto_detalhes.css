@@ -689,7 +689,9 @@ inicio do footer */
 }
 
 
-#shopping-bar>#shopping-bar-button>button {
+#shopping-bar>#shopping-bar-button>a {
+    background-color: #F8F9FA;
+    color: black;
     display: flex;
     flex-direction: row;
     height: 3rem;
@@ -698,11 +700,11 @@ inicio do footer */
     border-radius: .2rem;
 }
 
-#shopping-bar>#shopping-bar-button>button:hover {
+#shopping-bar>#shopping-bar-button>a:hover {
     background-color: rgb(223, 223, 223);
 }
 
-#shopping-bar>#shopping-bar-button>button>img {
+#shopping-bar>#shopping-bar-button>a>img {
     width: 1rem;
     margin-right: 1rem;
 }
