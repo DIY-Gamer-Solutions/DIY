@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/DIY_Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<%= css %>  ">
+    <script src="javascripts/login_modal.js" defer></script>
+    <script src="javascripts/validacao_cadastro_user.js" defer></script>
+    <script src="/public/js/hamburguer.js" defer></script>
+
+    <title> <%= title %>  </title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-logo">
+            <a href="/"><img class="logo" src="images/DIY.png" alt=""></a>
+        </nav>
+        <nav id="nav-menu">
+            <ul id="menu">
+                <li><a href="/produto">ENTRY EDITION</a></li>
+                <li><a href="/produto">GAMER EDITION</a></li>
+                <li><a href="/produto">WORK EDITION</a></li>
+            </ul>
+        </nav>
+        <nav id="icons">
+            <a id="menu-user" href=""><img class="menu-icons" src="images/account.png" alt=""><img
+                    class="menu-icons icon-small" src="images/arrow-down.png" alt=""></a>
+            <a id="menu-cart" href="/carrinho"><img class="menu-icons" src="images/cart.png" alt=""></a>
+            <a id="menu-sandwich" href=""><img class="menu-icons" src="images/menu hamburguer.png" alt=""></a>
+        </nav>
+
+        <section id="cadastro">
+            <div>
+                <div>
+                    <h2>Login</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <form id="cadastro-from" action="">
+                    <div class="form-itens">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="form-itens">
+                        <label for="">Senha</label>
+                        <input type="password">
+                    </div>
+
+                    <button id="submit-buton"><img id="black-img" src="images/login_black.png" alt=""><img
+                            id="white-img" src="images/login_white.png" alt=""> <span>Entrar</span> </button>
+                </form>
+                <span>Não tem conta? <a id="login-link"
+                    href="/cadastro_usuario">Cadastre-se</a></span>
+            </div>
+        </section>
+
+
+
+    </header>

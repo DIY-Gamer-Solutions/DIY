@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "sku": "index-i7-16-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"16",
+        "placaDeVideo": "RTX 3080",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp" 
+    },
+    {
+        "id": 2,
+        "sku": "index-i7-32-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"32",
+        "placaDeVideo": "RTX 3080",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"  
+    },
+    {
+        "id": 3,
+        "sku": "index-i7-64-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"64",
+        "placaDeVideo": "RTX 4090",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"  
+    },
+    {
+        "id": 4,
+        "sku": "index-i7-128-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"128",
+        "placaDeVideo": "RTX 3080",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"  
+    },
+    {
+        "id": 5,
+        "sku": "index-i7-16-3090-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"16",
+        "placaDeVideo": "RTX 3090",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"  
+    },
+    {
+        "id": 6,
+        "sku": "index-i7-32-3090-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador":"Core i7 12700k",
+        "meroriaRam":"32",
+        "placaDeVideo": "RTX 3090",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"
+    }
+]
