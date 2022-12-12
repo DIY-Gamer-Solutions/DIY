@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var page ='produto' 
+const produtoController = require('../controllers/produtoController')
+
 /* GET home page. */
-router.get(('/' + page), function(req, res, next) {
-  res.render( page, { title: 'DIY - Gamer Solutions',css:'stylesheets/'+page+'.css' });
-});
+router.get(('/' + page), produtoController.index );
 
 module.exports = router;
