@@ -9,9 +9,12 @@ const maquinas = [
   { id: 5, titulo: "USER 147", placa: "Nvidea15"}
 ]
 
-/* GET home page. */
 router.get(('/' + page), function(req, res, next) {
   res.render( page, { title: 'DIY - Gamer Solutions',css:'stylesheets/'+page+'.css', maquinas });
+});
+
+router.get('/adicionar', (req, res) => {
+  res.render('adicionar-maquina')
 });
 
 module.exports = router;
