@@ -15,6 +15,7 @@ var finalizacaoEnderecoRouter = require('./routes/finalizacao_endereco');
 var painelUsuarioRouter = require('./routes/painel_usuario');
 var cadProdRouter = require('./routes/cad_prod');
 var usersRouter = require('./routes/users');
+var adminRouter = require('./routes/admin');
 
 var app = express();
 
@@ -39,6 +40,7 @@ app.use('/', finalizacaoEnderecoRouter);
 app.use('/', painelUsuarioRouter);
 app.use('/', cadProdRouter);
 app.use('/users', usersRouter);
+app.use('/', adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
