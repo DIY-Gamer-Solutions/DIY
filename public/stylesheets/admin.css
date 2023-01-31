@@ -262,10 +262,6 @@
     height: 60%;
   }
   
-  
-  
-  
-  
   #login-link {
     color: #F59B1A;
   }
@@ -275,17 +271,8 @@
   }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
   /* daqui pra baixo não tem mais nada relacionado ao header */
-  
-  
+
   .painel {
     width: 100%;
     height: 20rem;
@@ -309,43 +296,51 @@
     letter-spacing: .1em;
     font-size: 1.2rem;
   }
-  
-  .menu-horizontal {
-    margin-right: 30rem;
-    height: 25rem;
-    width: 100%;
+
+  li>a{
+    color: #212529;
   }
-  
-  .menu-horizontal>ul {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .menu-horizontal>ul>li {
-    padding: 3rem;
-    bottom: 40rem;
-    cursor: pointer;
-    
-  }
-  
-  .menu-vertical {
-    left: 17rem;
-    position: relative;
-    bottom:17rem;
-  }
-  
-  .menu-vertical>ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .menu-vertical>ul>li {
-    padding: 1rem;
-    background-color: #dedfe1;
-    border-bottom: solid #ffffff .2rem;
-    cursor: pointer;
-  }
+
+main {
+  display: flex;
+  flex-grow: 2;
+  justify-content: space-around;
+  flex-direction: column;
+  height:auto;
+  align-items: center;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+}
+
+main .body {
+  display: flex;
+  flex-direction: column;
+}
+
+main .body .row{
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+ min-width: 20rem;
+ border: 0.1rem solid grey;
+ padding: 1rem;
+ margin: .1rem;
+ display: flex;
+}
+
+.item1 {
+  min-width: 20rem;
+  border: 0.1rem solid grey;
+  padding: 1rem;
+  margin: .1rem;
+  display: flex;
+ }
   
   .icones {
     width: 1.5rem;

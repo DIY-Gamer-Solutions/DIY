@@ -4,7 +4,7 @@
         <section class="painel">
             <div class="container">
                 <div class="pedidos">
-                    <h1 class="seus-pedidos">Seus pedidos</h1>
+                    <h1 class="seus-pedidos">BIBLIOTECA DE PRODUTOS</h1>
                         <div class="frase">
                             <div><p>Todos eles estão aqui.</p></div>
                         </div>
@@ -12,37 +12,39 @@
             </div>
         </section>
 
-        <section>
-            <div class="menu-horizontal">
+
+            <nav>
                 <ul>
                     <li>
-                        Pedido #
-                    </li>
-                    <li>
-                        Data
-                    </li>
-                    <li>
-                        Total
-                    </li>
-                    <li>
-                        Status
-                    </li>
-                    <li>
-                        Ação
+                        <a href="admin/adicionar">Adicionar</a>
                     </li>
                 </ul>
+            </nav>
+
+
+            <div class="column-header">
+                <div class="item">
+                    <h4>ID</h4>
+                </div>
+                <div class="item">
+                    <h4>Título</h4>
+                </div>
+                <div class="item">
+                    <h4>Especificações</h4>
+                </div>
+            </div>
+            
+
+            <div class="body">
+            <% maquinas.forEach(maquina => { %>
+            <div class="row">
+                <span class="item1"><%= maquina.id %></span>
+                <span class="item1"><%= maquina.titulo %></span>
+                <span class="item1"><%= maquina.placa %></span>
+            </div>
+            <% }) %>
             </div>
 
-            <div class="menu-vertical">
-                <ul>
-                    
-                    <li><a href="#"><img class="icones" src="/public/img/pedido.png" alt=""></a>Pedidos</li>
-                    <li><a href="#"><img class="icones" src="/public/img/carteira-de-identidade.png" alt=""></a>Dados Pessoais</li>
-                    <li class="adress"><a href="#"><img class="icones" src="/public/img/endereco-residencial.png" alt=""></a>Endereço</li>
-                    <li class="sair"><a href="#"><img class="icones" src="/public/img/sair.png" alt=""></a>Sair</li>
-                </ul>
-            </div>
- 
 
     </main>
     <%- include('partials/footer') %> 
