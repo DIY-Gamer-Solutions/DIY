@@ -15,8 +15,8 @@
 
             <nav>
                 <ul>
-                    <li>
-                        <a href="/admin/adicionar">Adicionar</a>
+                    <li class="addbutton">
+                        <a href="/adicionar">Adicionar</a>
                     </li>
                 </ul>
             </nav>
@@ -32,6 +32,9 @@
                 <div class="item">
                     <h4>Especificações</h4>
                 </div>
+                <div class="item">
+                    <h4>Ações</h4>
+                </div>
             </div>
             
 
@@ -41,6 +44,11 @@
                 <span class="item1"><%= maquina.id %></span>
                 <span class="item1"><%= maquina.titulo %></span>
                 <span class="item1"><%= maquina.placa %></span>
+                <span class="item1">
+                    <form action="deletar/<%= maquina.id %>?_method=DELETE" method="post">
+                        <button type="submit">Deletar</button>
+                    </form>
+                </span>
             </div>
             <% }) %>
             </div>
