@@ -1,17 +1,42 @@
 <%- include('partials/header') %>     
     <main>
-    <h2>Adicionar máquina</h2>
+    <h2 class="title">Adicionar máquina</h2>
         <form class="add-form" action="/admin" method="post" enctype="multipart/form-data">
-            <label for="titulo">Título</label>
-            <input type="text" name="titulo" id="titulo">
+            <label for="sku">Sku</label>
+            <input type="text" name="sku" id="sku">
 
-            <label for="placa">Especificações</label>
-            <input type="text" name="placa" id="placa">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
 
+            <label for="imagem">Imagem</label>
             <input type="file" name="imagem" placeholder="imagem">
+
+            <label for="valor">Valor</label>
+            <input type="text" name="valor" id="valor">
+            
+            <label for="processador">Processador</label>
+            <input type="text" name="processador" id="processador">
+
+            <label for="memoriaRam">Memória Ram</label>
+            <input type="text" name="memoriaRam" id="memoriaRam">
+            
+            <label for="placaDeVideo">Placa de Video</label>
+            <input type="text" name="placaDeVideo" id="placaDeVideo">
+            
+            <label for="armazenamentoNvme">Armazenamento Nvme</label>
+            <input type="text" name="armazenamentoNvme" id="armazenamentoNvme">
+
+            <label for="armazenamentoSata">Armazenamento Sata</label>
+            <input type="text" name="armazenamentoSata" id="armazenamentoSata">
+
+            <label for="gabinete">Gabinete</label>
+            <input type="text" name="gabinete" id="gabinete">
+
+
 
             <button type="submit">Enviar</button>
 
+            
         </form>
     </main>
 <%- include('partials/footer') %> 

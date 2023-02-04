@@ -318,16 +318,22 @@ main {
   display: flex;
   flex-direction: row;
   height: 5rem;
+  width: 100%;
+  justify-content: center;
 }
 
-main .body {
+div .body {
   display: flex;
   flex-direction: column;
+  width:100rem;
+  justify-content: center;
+  padding: 100rem;
 }
 
-main .body .row{
+.row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .item {

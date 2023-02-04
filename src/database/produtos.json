@@ -1,11 +1,47 @@
 [
     {
+        "id": 1,
+        "sku": "index-i7-16-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador": "Core i7 12700k",
+        "memoriaRam": "16",
+        "placaDeVideo": "RTX 3080",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"
+    },
+    {
+        "id": 2,
+        "sku": "index-i7-32-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador": "Core i7 12700k",
+        "memoriaRam": "32",
+        "placaDeVideo": "RTX 3080",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"
+    },
+    {
+        "id": 3,
+        "sku": "index-i7-64-3080-240-240",
+        "nome": "index.exe",
+        "valor": "53749",
+        "processador": "Core i7 12700k",
+        "memoriaRam": "64",
+        "placaDeVideo": "RTX 4090",
+        "armazenamentoNvme": "240",
+        "armazenamentoSata": "240",
+        "gabinete": "index2.webp"
+    },
+    {
         "id": 4,
         "sku": "index-i7-128-3080-240-240",
         "nome": "index.exe",
         "valor": "53749",
         "processador": "Core i7 12700k",
-        "meroriaRam": "128",
+        "memoriaRam": "128",
         "placaDeVideo": "RTX 3080",
         "armazenamentoNvme": "240",
         "armazenamentoSata": "240",
@@ -17,7 +53,7 @@
         "nome": "index.exe",
         "valor": "53749",
         "processador": "Core i7 12700k",
-        "meroriaRam": "16",
+        "memoriaRam": "16",
         "placaDeVideo": "RTX 3090",
         "armazenamentoNvme": "240",
         "armazenamentoSata": "240",
@@ -29,7 +65,7 @@
         "nome": "index.exe",
         "valor": "53749",
         "processador": "Core i7 12700k",
-        "meroriaRam": "32",
+        "memoriaRam": "32",
         "placaDeVideo": "RTX 3090",
         "armazenamentoNvme": "240",
         "armazenamentoSata": "240",
@@ -37,32 +73,38 @@
     },
     {
         "id": 7,
-        "titulo": "148",
-        "tipo": "258"
+        "sku": "sfsdf",
+        "nome": "sdfsdf",
+        "valor": "sdfsdf",
+        "processador": "sdfsdf",
+        "memoriaRam": "asdfsf",
+        "placaDeVideo": "sdfsdf",
+        "armazenamentoNvme": "sdfsdf",
+        "armazenamentoSata": "sdfsdf",
+        "gabinete": "sdfsdf"
     },
     {
         "id": 8,
-        "titulo": "",
-        "tipo": ""
+        "sku": "zxcz",
+        "nome": "zxczxc",
+        "valor": "zxcvz",
+        "processador": "zxcvzx",
+        "memoriaRam": "zxczx",
+        "placaDeVideo": "zxvcxz",
+        "armazenamentoNvme": "zvczv",
+        "armazenamentoSata": "zxvzxv",
+        "gabinete": "zxvzcv"
     },
     {
         "id": 9,
-        "titulo": "teste",
-        "tipo": "teste"
-    },
-    {
-        "id": 10,
-        "titulo": "kjhbjhb",
-        "tipo": "lkjhiyuh"
-    },
-    {
-        "id": 11,
-        "titulo": "dfsdf",
-        "tipo": "sdfsdf"
-    },
-    {
-        "id": 12,
-        "titulo": "aerfsef",
-        "placa": "dgdfg"
+        "sku": "hjh",
+        "nome": "ghj",
+        "valor": "gjh",
+        "processador": "ghgh",
+        "memoriaRam": "gh",
+        "placaDeVideo": "gh",
+        "armazenamentoNvme": "gh",
+        "armazenamentoSata": "g",
+        "gabinete": "g"
     }
 ]
