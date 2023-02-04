@@ -3,6 +3,19 @@ var router = express.Router();
 var page ='admin'
 const fs = require('fs');
 const path = require('path');
+const multer = require('multer');
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'public/images')
+  },
+  filename:(req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname))
+  },
+
+})
+
+const upload = multer({storage: storage})
 
 
 const maquinasPath = path.resolve(__dirname, '../database/produtos.json')
@@ -26,7 +39,7 @@ router.get('/adicionar', (req, res) => {
   res.render('adicionarMaquina', {css: 'stylesheets/adicionarMaquina.css', title:'DIY - Gamer Solutions'});
 });
 
-router.post('/' + page, function(req, res){
+router.post('/' + page, upload.single("imagem"), function(req, res){
   const maquinas = getMaquinas();
   maquinas.push({ id: maquinas.at(-1).id + 1, ...req.body });
 

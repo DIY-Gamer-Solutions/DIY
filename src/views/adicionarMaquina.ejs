@@ -1,12 +1,14 @@
 <%- include('partials/header') %>     
     <main>
     <h2>Adicionar máquina</h2>
-        <form class="add-form" action="/admin" method="post">
+        <form class="add-form" action="/admin" method="post" enctype="multipart/form-data">
             <label for="titulo">Título</label>
             <input type="text" name="titulo" id="titulo">
 
-            <label for="tipo">Especificações</label>
-            <input type="text" name="tipo" id="tipo">
+            <label for="placa">Especificações</label>
+            <input type="text" name="placa" id="placa">
+
+            <input type="file" name="imagem" placeholder="imagem">
 
             <button type="submit">Enviar</button>
 
