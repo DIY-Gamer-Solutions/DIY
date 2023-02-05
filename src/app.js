@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require('method-override');
 
+
+
 var indexRouter = require('./routes/index');
 var produtoRouter = require('./routes/produto');
 var produtoDetalhesRouter = require('./routes/produto_detalhes');
@@ -44,7 +46,6 @@ app.use('/', painelUsuarioRouter);
 app.use('/', cadProdRouter);
 app.use('/users', usersRouter);
 app.use('/', adminRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

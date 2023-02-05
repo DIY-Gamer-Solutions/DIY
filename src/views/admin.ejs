@@ -5,7 +5,6 @@
             <div class="container">
                 <div class="pedidos">
                     <h1 class="seus-pedidos">BIBLIOTECA DE PRODUTOS</h1>
-
                  </div>
             </div>
         </section>
@@ -14,7 +13,7 @@
             <nav>
                 <ul>
                     <li class="addbutton">
-                        <a href="/adicionar">Adicionar</a>
+                        <a href="/adicionar">Adicionar produto</a>
                     </li>
                 </ul>
             </nav>
@@ -24,9 +23,7 @@
                 <div class="item">
                     <h4>ID</h4>
                 </div>
-                <div class="item">
-                    <h4>Sku</h4>
-                </div>
+
                 <div class="item">
                     <h4>Nome</h4>
                 </div>
@@ -36,10 +33,6 @@
 
                 <div class="item">
                     <h4>Valor</h4>
-                </div>
-
-                <div class="item">
-                    <h4>Processador</h4>
                 </div>
 
                 <div class="item">
@@ -59,30 +52,23 @@
                 </div>
 
                 <div class="item">
-                    <h4>Gabinete</h4>
-                </div>
-
-                <div class="item">
                     <h4>Ações</h4>
                 </div>
 
             </div>
             
 
-            <div class="body">
+            <div class="tabela">
             <% maquinas.forEach(maquina => { %>
             <div class="row">
                 <span class="item1"><%= maquina.id %></span>
-                <span class="item1"><%= maquina.sku %></span>
                 <span class="item1"><%= maquina.nome %></span>
                 <span class="item1"><%= maquina.imagem %></span>
                 <span class="item1"><%= maquina.valor %></span>
-                <span class="item1"><%= maquina.processador %></span>
                 <span class="item1"><%= maquina.memoriaRam %></span>
                 <span class="item1"><%= maquina.placaDeVideo %></span>
                 <span class="item1"><%= maquina.armazenamentoNvme %></span>
                 <span class="item1"><%= maquina.armazenamentoSata %></span>
-                <span class="item1"><%= maquina.gabinete %></span>
 
                 <span class="item1">
                     <form action="deletar/<%= maquina.id %>?_method=DELETE" method="post">

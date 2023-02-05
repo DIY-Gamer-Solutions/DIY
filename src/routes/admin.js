@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
 
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'public/images')
@@ -56,5 +57,7 @@ router.delete('/deletar/:id', (req, res) => {
   saveMaquinas(maquinas);
   res.redirect('/admin');
 });
+
+
 
 module.exports = router;

@@ -1,110 +1,56 @@
 [
     {
         "id": 1,
-        "sku": "index-i7-16-3080-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Index.exe",
+        "valor": "R$14.125,00",
         "memoriaRam": "16",
         "placaDeVideo": "RTX 3080",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
+        "armazenamentoSata": "240"
     },
     {
         "id": 2,
-        "sku": "index-i7-32-3080-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Script.js",
+        "valor": "R$32.125,00",
         "memoriaRam": "32",
         "placaDeVideo": "RTX 3080",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
+        "armazenamentoSata": "240"
     },
     {
         "id": 3,
-        "sku": "index-i7-64-3080-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Package.json",
+        "valor": "R$12.354,10",
         "memoriaRam": "64",
         "placaDeVideo": "RTX 4090",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
+        "armazenamentoSata": "240"
     },
     {
         "id": 4,
-        "sku": "index-i7-128-3080-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Git add .",
+        "valor": "R$20.985,00",
         "memoriaRam": "128",
         "placaDeVideo": "RTX 3080",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
+        "armazenamentoSata": "240"
     },
     {
         "id": 5,
-        "sku": "index-i7-16-3090-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Database",
+        "valor": "R$42.878,00",
         "memoriaRam": "16",
         "placaDeVideo": "RTX 3090",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
+        "armazenamentoSata": "240"
     },
     {
         "id": 6,
-        "sku": "index-i7-32-3090-240-240",
-        "nome": "index.exe",
-        "valor": "53749",
-        "processador": "Core i7 12700k",
+        "nome": "Routes",
+        "valor": "R$53.749,00",
         "memoriaRam": "32",
         "placaDeVideo": "RTX 3090",
         "armazenamentoNvme": "240",
-        "armazenamentoSata": "240",
-        "gabinete": "index2.webp"
-    },
-    {
-        "id": 7,
-        "sku": "sfsdf",
-        "nome": "sdfsdf",
-        "valor": "sdfsdf",
-        "processador": "sdfsdf",
-        "memoriaRam": "asdfsf",
-        "placaDeVideo": "sdfsdf",
-        "armazenamentoNvme": "sdfsdf",
-        "armazenamentoSata": "sdfsdf",
-        "gabinete": "sdfsdf"
-    },
-    {
-        "id": 8,
-        "sku": "zxcz",
-        "nome": "zxczxc",
-        "valor": "zxcvz",
-        "processador": "zxcvzx",
-        "memoriaRam": "zxczx",
-        "placaDeVideo": "zxvcxz",
-        "armazenamentoNvme": "zvczv",
-        "armazenamentoSata": "zxvzxv",
-        "gabinete": "zxvzcv"
-    },
-    {
-        "id": 9,
-        "sku": "hjh",
-        "nome": "ghj",
-        "valor": "gjh",
-        "processador": "ghgh",
-        "memoriaRam": "gh",
-        "placaDeVideo": "gh",
-        "armazenamentoNvme": "gh",
-        "armazenamentoSata": "g",
-        "gabinete": "g"
+        "armazenamentoSata": "240"
     }
 ]
